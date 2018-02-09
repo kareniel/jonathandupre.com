@@ -4,7 +4,7 @@
 
 - the World Wide Web 
 - [choo](https://choo.io/), [tachyons](http://tachyons.io/), [browserify](http://browserify.org/) 
-p2p systems 
+- p2p systems 
 - [electronic bass music](https://en.wikipedia.org/wiki/Bass_music) 
 - jiu-jitsu 
 
