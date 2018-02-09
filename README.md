@@ -22,6 +22,6 @@
 # places i hang out
 
 - the city of montreal in Canada 
-- on twitter [@jonathan_dupre]() 
+- on twitter [@jonathan_dupre](https://twitter.com/jonathan_dupre) 
 - on \#choo and \#hypermodules on [freenode](https://freenode.net/project) 
-- at [nodeschool montreal]() 
+- at [nodeschool montreal](https://nodeschool.io/montreal/) 
