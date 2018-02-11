@@ -1,0 +1,43 @@
+{
+  "name": "www-data",
+  "version": "0.1.0",
+  "description": "- the World Wide Web  - [choo](https://choo.io/), [tachyons](http://tachyons.io/), [browserify](http://browserify.org/)  - p2p systems  - [electronic bass music](https://en.wikipedia.org/wiki/Bass_music)  - jiu-jitsu",
+  "main": "index.js",
+  "dependencies": {
+    "bankai": "^9.5.1",
+    "budo": "^11.1.0",
+    "choo": "^6.7.0",
+    "hyperx": "^2.3.2",
+    "marked": "^0.3.12",
+    "nanocomponent": "^6.5.0",
+    "sheetify": "^7.2.0",
+    "standard": "^10.0.3",
+    "style.css": "^1.0.0",
+    "tachyons": "^4.9.1",
+    "tape": "^4.8.0"
+  },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "devDependencies": {
+    "brfs": "^1.4.4",
+    "sitedown": "^3.3.0"
+  },
+  "scripts": {
+    "start": "sitedown -w --layout layout.html",
+    "build": "sitedown --layout layout.html",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kareniel/www-data.git"
+  },
+  "author": "kareniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kareniel/www-data/issues"
+  },
+  "homepage": "https://github.com/kareniel/www-data#readme"
+}
