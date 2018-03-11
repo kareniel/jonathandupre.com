@@ -1,25 +1,27 @@
-### things i'm into
+Hey! I'm Jonathan. 
 
-- the World Wide Web 
-- [choo](https://choo.io/), [tachyons](http://tachyons.io/), [browserify](http://browserify.org/) 
-- p2p systems 
-- [electronic bass music](https://en.wikipedia.org/wiki/Bass_music) 
-- jiu-jitsu 
+On the internet I go by the nickname `kareniel`. 
 
-### what i'm working on
+I'm a software developer. In the daytime, I work at [Campsite](https://www.campsiteproject.com), on front-end architecture. This website is about what I create in the evenings and weekends. 
 
-- [vibd](https://github.com/vibedrive/vibd) - nodejs music library server  
-- [trainkit](https://github.com/kareniel/trainkit) - vanilla (nano)components for building webapp interfaces 
 
-### things i wish i could work on more
+### Some of my work in progress
 
-- [bitsy-clone](https://github.com/kareniel/bitsy-clone) - a minimal clone of the bitsy game engine 
-- [music playlists](https://soundcloud.com/kareniel/sets) - some cool beats 
-- [coder pour le web](https://www.coderpourleweb.ca) - tutoriels pour apprendre à programmer 
+- [Vibedrive](https://www.vibedrive.co) - A tool to help DJs organize their music library  
+- [J'aime NDG](https://jaimendg.netlify.com) -  An interactive map for my borough
+- [trainkit](https://github.com/kareniel/trainkit) - Vanilla (nano)components for building web app interfaces
+- [A bitsy clone](https://github.com/kareniel/bitsy-clone) - A minimal clone of the bitsy game engine, made in Choo.
 
-### places i hang out
 
-- the [city of Montreal, in Canada](https://en.wikipedia.org/wiki/Montreal) 
+### Other interesting things
+
+- [My Soundcloud Playlists](https://soundcloud.com/kareniel/sets)
+
+
+### Places i hang out
+
+- the [city of Montreal](https://en.wikipedia.org/wiki/Montreal), in Canada
 - on twitter [@jonathan_dupre](https://twitter.com/jonathan_dupre) 
-- in \#choo on [freenode](https://freenode.net/project) 
+- as `kareniel` in \#choo on [freenode](https://freenode.net/project) 
 - at [nodeschool montreal](https://nodeschool.io/montreal/) 
+
