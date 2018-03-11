@@ -60,3 +60,4 @@ typings/
 dist
 build
 
+.DS_Store
