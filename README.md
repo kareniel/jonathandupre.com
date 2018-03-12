@@ -1,12 +1,12 @@
-Hey! I'm Jonathan. (or `kareniel` on the internet)
+Hey! I'm Jonathan.
 
-I'm a software developer.
-On the evenings and weekends I work on few things.
+I'm a software developer.  
+On the evenings and weekends I work on few things:
 
 - [Vibedrive](https://www.vibedrive.co) - A tool to help DJs organize their music library.
-- [trainkit](https://www.vibedrive.co) - Vanilla (nano)components for building web app interfaces
-- [J'aime NDG](https://jaimendg.netlify.com) - An interactive map for my borough
-
+- [trainkit](https://www.vibedrive.co) - Vanilla (nano)components for building web app interfaces.
+- [J'aime NDG](https://jaimendg.netlify.com) - An interactive map for my borough.
+- [Captain's log](https://www.jonathandupre.com/blog) - Sometimes I log what I'm working on .
 
 ### Other interesting things
 
