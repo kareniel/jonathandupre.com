@@ -92,7 +92,7 @@ class Shell {
 
     if (command === 'clear') return this.clear()
 
-    this.term.write('\n' + ansiEscapes.cursorLeft)
+    if (command) this.term.write('\n' + ansiEscapes.cursorLeft)
 
     switch (command) {
       case 'whoami':
@@ -105,6 +105,13 @@ class Shell {
 
       case 'cat':
         this.cat(params)
+        break
+
+      case 'echo':
+        this.term.write(params.join(''))
+        break
+
+      case '':
         break
 
       default:
