@@ -1,9 +1,0 @@
-html, body {
-  margin: 0px !important;
-  padding: 0px !important;
-  background-color: black;
-}
-
-.xterm .xterm-viewport {
-  overflow-y: hidden;
-}
