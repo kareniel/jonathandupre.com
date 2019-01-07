@@ -61,3 +61,4 @@ dist
 build
 
 .DS_Store
+.nuxt
