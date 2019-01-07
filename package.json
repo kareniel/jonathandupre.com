@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/kareniel/www/issues"
   },
+  "browser": {
+    "fs": false
+  },
   "homepage": "https://github.com/kareniel/www#readme",
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
