@@ -1,0 +1,13 @@
+items:
+  - 
+    name: 'Blog'
+    route: '/blog'
+  -
+    name: 'About'
+    route: '/about'
+  -
+    name: 'Hire me'
+    route: '/hire-me'
+  -
+    name: 'Contact'
+    route: '/contact' 

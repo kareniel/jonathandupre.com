@@ -1,7 +1,9 @@
 ---
-title: Using markdown in Nuxt.js static website
+title: Generating a fully static website using Nuxt.js and markdown
 date: 2019-01-07
 ---
+
+> Warning: This solution assumes that you'll strip off the Vue SPA completely from your site in production. 
 
 So, Nuxt.js doesn't come with markdown compilation out of the box.
 
