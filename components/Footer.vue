@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer.bg-black-90.white.flex.justify-center
+  footer.bg-black-90.white.flex.justify-center.mt5
     .container.tc
       small.pv4.f6.db.tc.flex.flex-row.justify-center
         | © 2012-2019 Jonathan Dupré, All Rights Reserved

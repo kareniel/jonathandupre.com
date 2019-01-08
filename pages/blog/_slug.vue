@@ -1,22 +1,22 @@
 <template>
-  <div>
-    THIS IS A BLOG POST YESSS 
-    <pre>content: {{ content }}</pre>
-  </div>
+  <article>
+    <h2>{{ post.data.title }} </h2>
+    <div v-html="post.content"></div>
+  </article>
 </template>
 
 <script>
 export default {
   async asyncData ({ params, payload }) {
     if (process.server) {
-      return import('@/scripts/load-content').then(loadContent => {
-        payload = loadContent.default('blog', params.slug + '.md')
-        return { content: payload }
-      })
+      var imported = await import('@/scripts/load')
+      var load = imported.default
+
+      payload = load.post(params.slug + '.md')
     }
 
-    return { 
-      content: payload 
+    return {
+      post: payload 
     }
   }
 }

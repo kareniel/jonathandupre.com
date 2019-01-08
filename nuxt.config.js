@@ -4,7 +4,6 @@ import { promisify } from 'util'
 
 import loadContent from './scripts/load-content'
 
-var readFileAsync = promisify(fs.readFile)
 var contentDir = path.join(__dirname, '/content/blog')
 var contentFiles = fs.readdirSync(contentDir)
 
@@ -30,7 +29,7 @@ export default {
     }]
   ],
   generate: {
-    routes: function () {
+    routes () {
       return contentFiles.map(filename => {
         var file = loadContent('blog', filename)
 
@@ -40,17 +39,5 @@ export default {
         }
       })
     }
-    // routes: function () {
-    //   return contentFiles.map(filename => {
-    //     var filepath = path.join(contentDir, filename)
-
-    //     return readFileAsync(filepath, 'utf8').then(file => {
-    //       return {
-    //         route: `/blog/${path.basename(filename, '.md')}`,
-    //         payload: file
-    //       }
-    //     })
-    //   })
-    // }
   }
 }
