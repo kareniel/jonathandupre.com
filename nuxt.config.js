@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { promisify } from 'util'
 
-import loadContent from './scripts/load-content'
+import load from './scripts/load-content'
 
 var contentDir = path.join(__dirname, '/content/blog')
 var contentFiles = fs.readdirSync(contentDir)
@@ -31,7 +31,7 @@ export default {
   generate: {
     routes () {
       return contentFiles.map(filename => {
-        var file = loadContent('blog', filename)
+        var file = load.post(filename)
 
         return {
           route: `/blog/${path.basename(filename, '.md')}`,
