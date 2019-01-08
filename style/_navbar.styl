@@ -1,0 +1,20 @@
+input#navbar-toggle
+  display: none
+    
+@media only screen and (max-width: 30rem)
+  input#navbar-toggle ~ .menu-mobile
+    display: none
+
+  input#navbar-toggle:checked ~ .menu-mobile
+    display: block
+    
+  nav #navbar-button
+    line-height: 20px
+    width: 20px
+    height: 20px
+
+  #navbar-toggle ~ nav #navbar-button:after
+    content: '☰'
+
+  #navbar-toggle:checked ~ nav #navbar-button:after
+    content: '✕'

@@ -3,10 +3,11 @@ extends /layouts/default.pug
 block content
   h2 Blog
   div
-    ul.list
+    ul.list.pl0
       each post in routes.blog
         li
           span #{ post.date }
           .dib.w2
+          br.dn-ns
           a.link(href='/blog/' + post.slug)
             | #{ post.title }
