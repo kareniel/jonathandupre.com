@@ -1,4 +1,5 @@
 var fs = require('fs')
+var fse = require('fs-extra')
 var path = require('path')
 var mkdirp = require('mkdirp')
 var pug = require('pug')
@@ -9,10 +10,9 @@ var matter = require('gray-matter')
 var marked = require('marked')
 var stylus = require('stylus')
 
-var rootDir = path.join(__dirname, '..')
-var distDir = path.join(__dirname, '../dist')
-var pagesDir = path.join(__dirname, '../pages')
-var styleDir = path.join(__dirname, '../style')
+const DIR = generateDirectoryMap([
+  'dist', 'pages', 'style', 'public'
+])
 
 const months = [
   'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -30,20 +30,15 @@ function build () {
 
   recreateDist()
 
-  var styleStr = fs.readFileSync(path.join(styleDir, 'style.styl'), 'utf8')
-
-  stylus.render(styleStr, { filename: 'style.css' }, function (err, css) {
-    if (err) throw err
-
-    fs.writeFileSync(path.join(distDir, 'style.css'), css)
-  })
+  copyAssets()
+  buildCSS()
 
   var data = loadData()
 
   data.routes = {}
 
   var dynamicRoutes = []
-  var pages = listFilesRecursive(pagesDir).filter(page => {
+  var pages = listFilesRecursive(DIR.pages).filter(page => {
     if (path.basename(page, '.pug')[0] === '_') {
       dynamicRoutes.push(page)
 
@@ -114,8 +109,8 @@ function build () {
 }
 
 function getDestination (src) {
-  var subdir = path.relative(rootDir, path.dirname(src)).split(path.sep).slice(1).join(path.sep)
-  var dir = path.join(distDir, subdir)
+  var subdir = path.relative(DIR.root, path.dirname(src)).split(path.sep).slice(1).join(path.sep)
+  var dir = path.join(DIR.dist, subdir)
   var ext = path.extname(src)
   var filename = path.basename(src, ext) + '.html'
   var dest = path.join(dir, filename)
@@ -165,12 +160,37 @@ function loadData () {
 }
 
 function recreateDist () {
-  rimraf.sync(distDir)
-  mkdirp.sync(distDir)
+  rimraf.sync(DIR.dist)
+  mkdirp.sync(DIR.dist)
 }
 
 function formatDate (value) {
   var d = new Date(value)
 
   return `${months[d.getMonth()]} ${d.getDate()} ${d.getFullYear()}`
+}
+
+function buildCSS () {
+  var styleStr = fs.readFileSync(path.join(DIR.style, 'style.styl'), 'utf8')
+
+  stylus.render(styleStr, { filename: 'style.css' }, function (err, css) {
+    if (err) throw err
+
+    fs.writeFileSync(path.join(DIR.dist, 'style.css'), css)
+  })
+}
+
+function copyAssets () {
+  fse.copySync(DIR.public, DIR.dist)
+}
+
+function generateDirectoryMap (directories) {
+  var rootDir = path.join(__dirname, '..')
+  var dir = { root: rootDir }
+
+  directories.forEach(name => {
+    dir[name] = path.join(rootDir, name)
+  })
+
+  return dir
 }
