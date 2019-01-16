@@ -1,0 +1,10 @@
+sites:
+  -
+    name: Twitter
+    url: https://twitter.com/Jonathan_Dupre
+  -
+    name: Github
+    url: https://github.com/kareniel
+  -
+    name: LinkedIn
+    url: https://www.linkedin.com/in/jonathandupre
