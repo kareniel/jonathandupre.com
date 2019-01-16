@@ -1,6 +1,6 @@
 ---
 title: Things you're gonna need for your basic electronics lab
-date: 2019-16-07
+date: 2019-01-16
 ---
 
 I have been slowly gathering basic tools and components for my electronics lab 
