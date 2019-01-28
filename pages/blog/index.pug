@@ -4,10 +4,12 @@ block content
   h2 Blog
   div
     ul.list.pl0
+      - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
       each post in routes.blog
-        li
-          span #{ post.date }
+        li.lh-copy.mb3.mb0-ns
+          .dib.w4-ns.tr-ns #{ post.date }
           .dib.w2
           br.dn-ns
-          a.link(href='/blog/' + post.slug)
-            | #{ post.title }
+          span.tl.dib
+            a.link(href='/blog/' + post.slug)
+              |#{ post.title }

@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 var fs = require('fs')
 var fse = require('fs-extra')
 var path = require('path')
@@ -29,9 +31,11 @@ function build () {
   console.log('Building...')
 
   recreateDist()
-
   copyAssets()
   buildCSS()
+
+  var renderer = new marked.Renderer()
+  var baseImgRenderingFn = renderer.image
 
   var data = loadData()
 
@@ -74,19 +78,31 @@ function build () {
       var frontmatter = matter(str)
       var data = frontmatter.data
 
-      folder.push({
+      var item = {
         slug: path.basename(filepath, path.extname(filepath)),
         title: data.title,
         date: formatDate(data.date)
-      })
+      }
+
+      folder.push(item)
+
+      renderer.image = generateImageRenderingFn()
 
       generatePage(route, dest, {
         post: {
           data,
-          content: marked(frontmatter.content)
+          content: marked(frontmatter.content, { renderer })
         }
       })
     })
+  }
+
+  function generateImageRenderingFn () {
+    return function (href, title, text) {
+      href = process.env.ASSET_URL + '/images/' + href
+
+      return baseImgRenderingFn.call(renderer, href, title, text)
+    }
   }
 
   function generatePage (src, dest, locals = {}) {
