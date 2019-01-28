@@ -90,11 +90,12 @@ constructor () {
   // ...
 
   this.hero = { x: 0, y: 0 }
-  this.setupListeners()
 }
 ```
 
 This simple object will keep track of where the player is located.
+
+Next we want to respond to player input:
 
 ```js
 App.prototype.setupListeners = function () {
@@ -153,6 +154,6 @@ And now we have player movement.
 
 In the next part, we'll look at adding a transition when the player 
 is moving between tiles, and begin to look at some logic around tile 
-access.
+accessibility.
 
 
