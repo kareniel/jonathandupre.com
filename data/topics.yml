@@ -1,0 +1,33 @@
+topics:
+  blog:
+    - unix philosophy
+    - open-source
+    - node.js
+    - web development
+    - calm technology
+    - pixel art
+    - game design
+  courses:
+    - creative problem-solving
+    - working with a development team
+    - interpreting debugging data
+    - version control methodology
+    - standard unix tools 
+    - leveraging existing code
+    - security mindset
+    - narrowing down problems to find root causes
+    - deploying to a cloud environment
+    - big-O analysis
+    - modelling systems
+    - invariant-based reasoning
+    - state-machines
+    - reasoning about the correctness of distributed algorithms
+    - inquiry learning and metacognition
+  thinking:
+    - analysing
+    - evaluating
+    - synthesising
+    - inferring
+    - conjecturing
+    - justifying
+    - categorising 
