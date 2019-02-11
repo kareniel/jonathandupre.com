@@ -5,9 +5,7 @@ date: 2019-02-04
 
 [Last time](/blog/smb3-overworld-map-part-1), we rendered a grid to a canvas element and let the player move an icon around using the arrow keyboard keys.
 
-Next step is going to be to add a transition when moving from one tile to 
-the next. But first, we will need some kind of game loop. Otherwise, 
-we won't get a chance to update the canvas before the animation finishes. 
+Next step is going to be to add a transition when moving from one tile to the next. But first, we will need some kind of game loop. Otherwise, we won't get a chance to update the canvas before the animation finishes. 
 The program will be too busy updating the position of the player icon.
 
 ```js
@@ -24,8 +22,7 @@ App.prototype.loop = function () {
 We can now put our movement logic inside the `update` function
 and we can be sure that every state change will be rendered to the canvas.
 
-Next, we will move our hero object to it's own class, so that any logic 
-that relates to it can be contained there.
+Next, we will move our hero object to it's own class, so that any logic that relates to it can be contained there.
 
 ```js
 class Hero {
@@ -43,11 +40,7 @@ class Hero {
 }
 ```
 
-The `movement` field will reference an object containing data about a 
-where the player is moving from and to during a given movement. Instead 
-of modifying the player's position, the `move` method will create a 
-`movement` object, which will be used by the `update` method every frame 
-until the movement is over.
+The `movement` field will reference an object containing data about a where the player is moving from and to during a given movement. Instead of modifying the player's position, the `move` method will create a `movement` object, which will be used by the `update` method every frame until the movement is over.
 
 ```js
 Hero.prototype.move = function (x, y) {
@@ -121,5 +114,4 @@ We now have smooth movement from tile to tile.
 
 ![](smb3_transitions.gif)
 
-In the next part, we will be looking at rendering tiles and managing
-collisions.
+In the next part, we will be looking at rendering tiles and managing collisions.
