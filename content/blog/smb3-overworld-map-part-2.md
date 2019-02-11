@@ -1,6 +1,6 @@
 ---
 title: Super Mario Bros. 3 Overworld Map (Part 2)
-date: 2019-02-04
+date: 2019-02-10
 ---
 
 [Last time](/blog/smb3-overworld-map-part-1), we rendered a grid to a canvas element and let the player move an icon around using the arrow keyboard keys.
