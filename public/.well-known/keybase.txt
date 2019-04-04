@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/kareniel
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jonathandupre.com
+  * I am kareniel (https://keybase.io/kareniel) on keybase.
+  * I have a public key with fingerprint 1372 AA3A 84DD 77F4 E29C  8CA8 A941 EDCA 8927 63BD
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101391f7fa03278162402e4b7614499fadbb4b7f254c0d3fe9e21e148766b209aad0a",
+      "fingerprint": "1372aa3a84dd77f4e29c8ca8a941edca892763bd",
+      "host": "keybase.io",
+      "key_id": "a941edca892763bd",
+      "kid": "0101391f7fa03278162402e4b7614499fadbb4b7f254c0d3fe9e21e148766b209aad0a",
+      "uid": "21c413fd7ec90812d9299376aef37219",
+      "username": "kareniel"
+    },
+    "service": {
+      "hostname": "jonathandupre.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1554395461,
+  "expire_in": 157680000,
+  "prev": "e35c53e0e5e332357e52dde44572987e4bd92a1cf662d770c97ab2451d3ac54e",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIsAnicrVJbSBVBGD6ni+Upo5tUVBKbUdApdmZnd3aPFYWFFIRBRBbFYXbnX10v
+u8c9R+0YYoRdrKSHKEisoMiKoKTMl3qwe1ZSUVmCUHQRCUShK0TQrNRbj83LzP/P
+93/zff/8d7JGhyLhL/kNfE9z/qHwo5stVaFtrWjNTsn0eFqK7ZTKYGSDcg7JVLzM
+4VJMkpGMFAPZ1GaygqmONExkDMSkGiLEMGzGTVNENlaJJXPFBgMwAkR0qmkmlg3G
+uMykqGQ7bjH4Cd9xU4IWKRQzpjCdcE6pTQAblm4xnRkEARcHA1NNMbkoLPGSQYUQ
+Z7IkLHU8kRNBfETeP/D/WXfVCB1GFkGKzSlYhqwjzA1sGArVGNjCCTICYBJ8l1VA
+oJX54DpQLtVFJZGtdiwIGhs4+YMo9VyWKmEur0r4sNTyKgRBwvdSnuWVi+uSVCqR
+jAXlqXQiwNeAGf/DFDcdl4tmiopq8JOO50oxJJBWygmokaoSxVCJhqIS7Eg4PsSd
+AKFSTZfFCt6BakEJimqpCsiggqJgRaWgYs6BEJViQ6eiVcIkQ5ataVj8kWwZlJmY
+qIgrzFIJSIG3SteTYlTIZMWCMukUC1tVPkh1tzq3jQmFI6GMsaOCIQtFMif/Hb0T
+g+NDjeNmH29at2HGqXjOtWfy5r6cqJ6pz2/YklNZ1Hlg5fDgu+YH3dNr3/bua2xp
+f7PpcO8qOT+WOSlZQE5P21TUFpk6ZTU8+Jn7+Pn33YW9z+lw9ueBOS923/gaqdXz
+0g9rOyL7o8daf/Xf7mhvKR13f/veZWOGpo3q6Xp5tvVSl5xDLoRzhzqu9K/t/DWr
+bt7W9OXcPZVHvhWAd7qv/F7PgTV5dH0TmzDzYMba7S+mZl2vmL0ifm3wo8KKXg8O
+vKo/vKJebrh7Ppt2b/nR2NtTk9ixpN6ryXq6+GTpa3XuULph+afzi5qya63OXXnh
+o239Uy5u/PAkur5wwZMzHRPPLbwqL3ufMfc3ccY9OQ==
+=Qvy9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kareniel
+
+==================================================================
