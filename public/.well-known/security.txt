@@ -1,0 +1,4 @@
+Contact: mailto:hello@jonathandupre.com
+Encryption: https://jonathandupre.com/.well-known/keybase.txt
+Preferred-Languages: en, fr
+Canonical: https://jonathandupre.com/.well-known/security.txt
