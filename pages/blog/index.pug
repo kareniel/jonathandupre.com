@@ -7,7 +7,7 @@ block content
       - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
       each post in routes.blog
         li.lh-copy.mb3.mb0-ns
-          .dib.w4-ns.tr-ns #{ post.date }
+          //- .dib.w4-ns.tr-ns #{ post.date }
           .dib.w2
           br.dn-ns
           span.tl.dib
