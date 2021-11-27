@@ -5,10 +5,17 @@ html, body
 body
   overflow-y: scroll
 
+body ::selection
+  background-color: rgb(56, 109, 255);
+  color: #fff;
+
+h1, h2
+  margin-bottom: 0;
+
 .container
   width: 100%
-  max-width: 960px
-  
+  max-width: 65ex
+
 .t1
   font-size: 2vh
 
@@ -27,8 +34,28 @@ pre
     padding-left: 1.5rem
     padding-right: 1.5rem
     width: 100%
-    
-#profile-picture
-  // width: 12rem
+
+a, a:visited, a:active
+  color: rgb(56, 109, 255);
+  font-weight: bold;
+
+blockquote
+  margin: 0;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  position: relative;
+
+blockquote::before
+  content: "\201C";
+  font-size: 5rem;
+  margin-top: 0;
+  font-weight: bold;
+  color: #999;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+blockquote::after
+  content: "";
 
 @import 'style/_navbar.styl'

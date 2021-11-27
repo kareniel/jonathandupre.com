@@ -1,6 +1,6 @@
 {
   "name": "@kareniel/www",
-  "version": "2021.09.28",
+  "version": "2021.11.27",
   "description": "My website.",
   "main": "src",
   "scripts": {
