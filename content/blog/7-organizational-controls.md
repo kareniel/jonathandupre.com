@@ -1,6 +1,6 @@
 ---
 title: 7 Organizational Controls
-date: 2021-12-08
+date: 2021-12-09
 ---
 
 There are 7 Organizational Controls you should be expected to have in place. They are defined in the Baseline Cyber Security Controls for Canadian SMOs.
@@ -31,7 +31,7 @@ And it really comes down these 4 steps:
 1. Determine what information technology is in scope
 2. Determine the value of information systems and assets
 3. Confirm the cyber security threat level
-4. Confirm cyber security investment levels
+4. Confirm the cyber security investment levels 
 
 Don't skip these controls. Scoping your security program early in the process will help you avoid spending time on the wrong thing. These controls will save you time and energy.
 <!-- 
