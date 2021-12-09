@@ -1,0 +1,7 @@
+items:
+  -
+    name: 'Blog'
+    route: '/blog'
+  -
+    name: 'Resources'
+    route: '/resources'
