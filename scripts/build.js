@@ -99,7 +99,7 @@ function build () {
 
   function generateImageRenderingFn () {
     return function (href, title, text) {
-      href = process.env.ASSET_URL + '/images/' + href
+      href = (process.env.ASSET_URL || '') + '/images/' + href
 
       return baseImgRenderingFn.call(renderer, href, title, text)
     }

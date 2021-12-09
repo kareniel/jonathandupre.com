@@ -1,7 +1,0 @@
-items:
-  -
-    name: 'About'
-    route: '/'
-  -
-    name: 'Contact'
-    route: '/contact' 
