@@ -1,23 +1,23 @@
 input(type="checkbox" id="navbar-toggle")
 
-nav.flex.justify-center.pt3.ph1
+nav.flex.justify-center.pt2.ph1
   .container.flex.justify-between
-    a(href="/").fw1.link.black.f5-l.f6.flex.items-center.serif.fw8.mv2
-      | Jonathan Dupré
+    a(href="/").link.black.f5-l.f7.flex.items-center.mv2.mh1
+      | Jonathan Dupré
 
-    //- ul.menu.list.dn.flex-ns.items-center.ma0.tr.f5-l.f7
-    //-   each item in navbar.items
-    //-     li.pl3
-    //-       a.white.link(href=item.route active-class="light-blue") 
-    //-         | #{ item.name }
+    ul.menu.list.flex.items-center.ma0.tr.mh1
+      each item in navbar.items
+        li.pl3.f7.f6-l
+          a.link(href=item.route) 
+            | #{ item.name }
 
-    //- label#navbar-button.flex.justify-center.items-center.dn-ns.w1.h1.pa1.mh2.tc.bg-black90.br1.ba.bw05.b--white.white.pointer(
-    //-   for="navbar-toggle"
-    //-   aria-label="Toggle mobile menu"
-    //- )
+//-     label#navbar-button.flex.justify-center.items-center.dn-ns.w1.h1.pa1.mh2.tc.bg-black90.br1.ba.bw05.pointer(
+//-       for="navbar-toggle"
+//-       aria-label="Toggle mobile menu"
+//-     )
 
 //- div.menu-mobile.list.flex.dn-ns.mt0.pl2.pv1.bg-black-90.white
 //-  each item in navbar.items
 //-   div.pl0.pv2.tc.db
-//-     a.link.white(href=item.route active-class="light-blue") 
+//-     a.link(href=item.route)
 //-       | #{ item.name }
