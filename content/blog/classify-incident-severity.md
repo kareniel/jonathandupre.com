@@ -1,5 +1,5 @@
 ---
-title: Incident Severity
+title: How to Classify Incident Severity
 date: 2021-12-10
 ---
 
