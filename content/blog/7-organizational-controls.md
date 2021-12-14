@@ -1,5 +1,5 @@
 ---
-title: 7 Organizational Controls
+title: 7 organizational controls
 date: 2021-12-09
 ---
 

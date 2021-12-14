@@ -1,3 +1,7 @@
+$blue=rgb(56, 109, 255);
+.bg-blue
+  background-color: $blue;
+
 html, body
   font-size: 20px
   min-height: 100vh
@@ -10,11 +14,14 @@ body ::selection
   color: rgb(0, 41, 155);
 
 body a::selection 
-  color: rgb(56, 109, 255);
+  color: $blue;
 
 .selected
   background-color: rgba(0, 68, 255, 0.05);
   color: rgb(0, 41, 155);
+
+h1, h2, h3, h4, h5, h6
+  font-family: georgia,times,serif;
 
 h2
   margin-top: 2.5rem;
@@ -47,7 +54,7 @@ pre
     width: 100%
 
 a, a:visited, a:active
-  color: rgb(56, 109, 255);
+  color: $blue;
   font-weight: bold;
 
 blockquote
