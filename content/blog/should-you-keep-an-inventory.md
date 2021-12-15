@@ -13,6 +13,6 @@ It would have been very difficult to guess that this specific event would happen
 
 In this particular case, society at large is paying (eg. lawyers can't do their job without having access to some documents that are only available through government systems). Every day that these systems are down probably involves millions of dollars in wasted time, without even counting the cost of actually solving the issue.
 
-However, had they had an up to date inventory of their system, the cost of mitigation could have been substantially lowered. With a proper inventory, they could have answered the question: "How many of our systems are affected?" and only taken down those. We would have collectively save millions of dollars. And yes, keeping an asset inventory is not free either. We make tradeoffs when we decide which security project to work on. 
+However, had they had an up to date inventory of their system, the cost of mitigation could have been substantially lowered. With a proper inventory, they could have answered the question: "How many of our systems are affected?" and only taken down those. We would have collectively saved millions of dollars. And yes, keeping an asset inventory is not free either. We make tradeoffs when we decide which security project to work on. 
 
 This is one project though that always pays off in the end. How can you know you are deploying the right quantity of resources if you don't even know what you are protecting? 
