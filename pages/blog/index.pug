@@ -2,6 +2,9 @@ extends /layouts/default.pug
 
 block content
   h1 Blog
+
+  h2 Most recent posts
+
   div
     ul.list.pl0
       - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
@@ -13,3 +16,21 @@ block content
           span.tl.dib
             a.link.ttc(href='/blog/' + post.slug)
               |#{ post.title }
+
+  h2 Resources
+  
+  h3 Google Sheets
+
+  ul.lh-copy.list.pl0
+    li
+      |📒 
+      a(target="_new" href="https://docs.google.com/spreadsheets/d/1Y_VjjxP_vHf8oBYviWTUrZQv1PsyuFUOcEAcm99msVw/edit?usp=sharing")
+        | Startup Security Register
+    li
+      |📜 
+      a(target="_new" href="https://docs.google.com/spreadsheets/d/1K7msQt-Asse6rx0nnUW-6Hm_-EfQMeWp3B5aSkzbqg8/edit#gid=0")
+        | Compilation of 100+ DeFi Hacks w/ $ Loss in 2021
+    //- li
+    //-   |📜 
+    //-   a(target="_new" href="https://docs.google.com/spreadsheets/d/1c6b0VQOBlw6KYwVS7Y-0AcjJCjz2JFImx8F5t1ZPL0A/edit?usp=sharing")
+    //-     | Web3 Security Ecosystem (Vendors and Places)
