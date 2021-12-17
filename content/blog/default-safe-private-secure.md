@@ -9,8 +9,7 @@ This happens partly because I regularly join new Discord servers.
 
 People regularily get scammed through this channel and the total amount of value lost sounds ridiculous. 
 
-To avoid getting spammed/scammed, you can toggle a switch in your server privacy settings.
-The label reads: "Allow direct messages from server members".
+To avoid getting spammed/scammed, you can toggle a switch in each-individual-server-that-you-join's privacy settings. The label reads: "Allow direct messages from server members".
 
 This option is turned on by default.
 
