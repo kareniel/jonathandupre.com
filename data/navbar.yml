@@ -1,10 +1,10 @@
 items:
+  # -
+  #   name: 'Research'
+  #   route: '/research'
   -
     name: 'Services'
     route: '/services'
   -
     name: 'Blog'
     route: '/blog'
-  # -
-  #   name: 'Resources'
-  #   route: '/resources'
