@@ -3,8 +3,11 @@ items:
   #   name: 'Research'
   #   route: '/research'
   -
-    name: 'Services'
-    route: '/services'
+    name: 'Consulting'
+    route: '/services/advisory'
+  -
+    name: 'Teaching'
+    route: '/services/teaching'
   -
     name: 'Blog'
     route: '/blog'
