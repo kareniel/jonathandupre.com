@@ -183,7 +183,7 @@ function recreateDist () {
 function formatDate (value) {
   var d = new Date(value)
 
-  return `${months[d.getMonth()]} ${d.getDate()} ${d.getFullYear()}`
+  return `${months[d.getMonth()]} ${String(d.getDate()).padStart(2, '0')} ${d.getFullYear()}`
 }
 
 function buildCSS () {
