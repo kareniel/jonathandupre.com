@@ -8,7 +8,7 @@ One type of data that sometimes gets forgotten in software shops is the one foun
 A simple way to approach this challenge is to enable the end-user as much as possible. 
 
 1. Publish a document management policy that describes the different security levels a document can be labeled with and a scheme for document version control.
-2. Create templates for each document type so that team members don't have to add more effort to their workload.
+2. Create templates for each document type so that team members don't have to add more effort to their existing workload.
 3. Progressively label old documents as you update them.
 4. Assign ownership of directories where those documents reside to team managers. They will now be responsible for enforcing the document management policy inside that directory.
 5. Add a clause that reflects this new responsibility to employment contracts for each of these roles. Make sure that both the manager and the person they report to sign this new change.
