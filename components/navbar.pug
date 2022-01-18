@@ -1,13 +1,14 @@
 input(type="checkbox" id="navbar-toggle")
 
-nav.flex.justify-center.pt2.ph1
+nav.flex.justify-center.pt2
   .container.flex.justify-between
-    a(href="/").link.black.f5-l.f7.flex.items-center.mv2.mh1
-      | Jonathan Dupré
+    a(href="/").link.black.f6.mv2
+      span.dn.dib-ns Jonathan &nbsp;
+      span Dupré
 
-    ul.menu.list.flex.items-center.ma0.tr.mh1
+    ul.pl0.menu.list.flex.items-center.justify-end.mv2.mh1.mr2
       each item in navbar.items
-        li.pl3.f7.f6-l
+        li.pl2.pl3-ns.f7.tr
           a.link(href=item.route) 
             | #{ item.name }
 
