@@ -11,6 +11,7 @@ var changeCase = require('change-case')
 var matter = require('gray-matter')
 var marked = require('marked')
 var stylus = require('stylus')
+var { Feed } = require('feed')
 
 const DIR = generateDirectoryMap([
   'dist', 'pages', 'style', 'public'
@@ -29,6 +30,26 @@ if (require.main === module) {
 
 function build () {
   console.log('Building...')
+
+  const feed = new Feed({
+    title: "Jonathan Dupré",
+    description: "Web Security Advisor and Educator.",
+    id: "https://jonathandupre.com/",
+    link: "https://jonathandupre.com/",
+    language: "en",
+    // image: "https://diagonal.sh/images/logo/logomark-dark-572.png",
+    favicon: "https://jonathandupre.com/favicon.ico",
+    copyright: "© 2012-2022, Jonathan Dupré.",
+    generator: "None",
+    feedLinks: {
+      atom: "https://jonathandupre.com/atom",
+      rss: "https://jonathandupre.com/rss"
+    },
+    author: {
+      name: "Jonathan Dupré",
+      link: "https://jonathandupre.com"
+    }
+  })
 
   recreateDist()
   copyAssets()
@@ -59,6 +80,9 @@ function build () {
   dynamicRoutes.forEach(generateRoute)
   pages.forEach(page => generatePage(page))
 
+  fs.writeFileSync('dist/rss', feed.rss2())
+  fs.writeFileSync('dist/atom', feed.atom1())
+
   function generateRoute (route) {
     var dirName = path.dirname(route).split('/').slice(-1)[0]
     var paramName = path.basename(route, '.pug').split('').slice(1).join('')
@@ -88,12 +112,19 @@ function build () {
 
       renderer.image = generateImageRenderingFn()
 
-      generatePage(route, dest, {
-        post: {
-          data,
-          content: marked(frontmatter.content, { renderer })
-        }
-      })
+      const content = marked(frontmatter.content, { renderer });
+
+      if (dirName === 'blog') {
+        feed.addItem(Object.assign({}, item, {
+          content,
+          updated: new Date(item.updated || item.date),
+          date: new Date(item.date),
+          // description: item.blurb,
+          link: 'https://jonathandupre.com/blog/' + item.slug
+        }))
+      }
+
+      generatePage(route, dest, { post: { data, content }})
     })
   }
 
