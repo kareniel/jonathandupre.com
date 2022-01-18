@@ -2,6 +2,9 @@ items:
   # -
   #   name: 'Research'
   #   route: '/research'
+  # -
+  #   name: 'About'
+  #   route: '/about'
   -
     name: 'Consulting'
     route: '/services/consulting'
