@@ -6,14 +6,15 @@ block content
   h2 Most recent posts
 
   div
-    ul.list.pl0
+    table
+      tbody
       - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
-      each post in routes.blog
-        li.lh-copy.mb3.mb0-ns
-          span.tl.dib
-            | #{ post.date } &ensp; 
-            a.link.ttc(href='/blog/' + post.slug)
-              |#{ post.title }
+        each post in routes.blog
+          tr.lh-copy
+            td.w4(style="vertical-align:top;") #{ post.date } &nbsp;
+            td(style="vertical-align:top;")  
+              a.link.ttc(href='/blog/' + post.slug)
+                |#{ post.title }
 
   h2 Free resources
 
