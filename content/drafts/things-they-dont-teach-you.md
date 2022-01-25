@@ -1,5 +1,5 @@
 ---
-title: Things the don't teach you
+title: Things they don't teach you
 date: 2022-01-21
 ---
 
