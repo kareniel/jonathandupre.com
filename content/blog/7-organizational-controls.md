@@ -26,7 +26,7 @@ The 7 organizational controls can shortened to:
 1. Identify the staffing level required for IT security
 1. Commit to progressive improvements
 
-And it really comes down these 4 steps:
+And it really comes down to these 4 steps:
 
 1. Determine what information technology is in scope
 2. Determine the value of information systems and assets
