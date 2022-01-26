@@ -7,4 +7,8 @@ Security properties
 
 Falling to the level your systems
 
-Adjusting the scope
+~~Adjusting the scope~~
+
+From process to practices
+
+
