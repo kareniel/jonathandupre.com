@@ -12,5 +12,5 @@ items:
     name: 'Teaching'
     route: '/services/teaching'
   -
-    name: 'Blog'
-    route: '/blog'
+    name: 'Resources'
+    route: '/resources'
