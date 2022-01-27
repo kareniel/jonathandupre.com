@@ -7,7 +7,12 @@ head
   meta(name="author" property="og:author" content="Jonathan Dupré")
   meta(name="description" property="og:description" 
     content=(post && post.data && post.data.description ? post.data.description : 'Web security advisor & educator'))
-  <meta name="image" property="og:image" content="https://jonathandupre.com/images/meta-banner.jpg">
+  meta(name="image" property="og:image" content="https://jonathandupre.com/images/meta-banner.jpg")
+
+  meta(name="twitter:title" content=post && post.data && post.data.title ? post.data.title : 'Jonathan Dupré')
+  meta(name="twitter:description" content=(post && post.data && post.data.description ? post.data.description : 'Web security advisor & educator'))
+  meta(name="twitter:image" content=" https://jonathandupre.com/images/meta-banner.jpg")
+  meta(name="twitter:card" content="summary_large_image")
 
   link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
   link(rel="icon" href="/favicon.ico" type="image/x-icon")
