@@ -1,7 +1,7 @@
 ---
 title: Notes on using Kanban 
 date: 2022-01-27
-description: This is a quick guide on using Kanban for security projects done solo or with small teams.
+description: This is a quick guide on using Kanban for security projects to help you reduce wasted time and effort.
 ---
 
 I have used Kanban to manage infrastructure that supports hundreds of thousands of users. I chose this approach over Scrum/Agile, because the volume of unplanned work made sprint planning ineffective.
