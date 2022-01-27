@@ -119,7 +119,7 @@ function build () {
           content,
           updated: new Date(item.updated || item.date),
           date: new Date(item.date),
-          // description: item.blurb,
+          description: item.description || '',
           link: 'https://jonathandupre.com/blog/' + item.slug
         }))
       }

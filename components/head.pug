@@ -4,8 +4,10 @@ head
   meta(charset="utf8")
   meta(name="viewport" content="width=device-width, initial-scale=1")
   meta(http-equiv="X-UA-Compatible" content="IE=Edge")
-  meta(name="author" content="Jonathan Dupre")
-  meta(name="description" content="Jonathan Dupré")
+  meta(name="author" property="og:author" content="Jonathan Dupré")
+  meta(name="description" property="og:description" 
+    content=(post && post.data && post.data.description ? post.data.description : 'Web security advisor & educator'))
+  <meta name="image" property="og:image" content="https://jonathandupre.com/images/meta-banner.jpg">
 
   link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
   link(rel="icon" href="/favicon.ico" type="image/x-icon")
