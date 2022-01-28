@@ -14,7 +14,7 @@ var stylus = require('stylus')
 var { Feed } = require('feed')
 
 const DIR = generateDirectoryMap([
-  'dist', 'pages', 'style', 'public'
+'dist', 'pages', 'style', 'public'
 ])
 
 const months = [
@@ -112,7 +112,7 @@ function build () {
 
       renderer.image = generateImageRenderingFn()
 
-      const content = marked(frontmatter.content, { renderer });
+      const content = marked.marked(frontmatter.content, { renderer });
 
       if (dirName === 'blog') {
         feed.addItem(Object.assign({}, item, {
@@ -130,7 +130,7 @@ function build () {
 
   function generateImageRenderingFn () {
     return function (href, title, text) {
-      href = (process.env.ASSET_URL || '') + '/images/' + href
+      href = (process.env.ASSET_URL || '') + '/images/' + href
 
       return baseImgRenderingFn.call(renderer, href, title, text)
     }
