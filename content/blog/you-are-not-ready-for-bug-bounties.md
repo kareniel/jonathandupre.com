@@ -1,6 +1,7 @@
 ---
 title: You're not ready for a bug bounty program
 date: 2022-01-28
+description: A short explanation of why I think you are not ready to have a bug bounty program at your startup yet.
 ---
 
 A bug bounty is a reward for a security researcher who report a vulnerability in your systems.
