@@ -5,28 +5,32 @@ block content
     .container
       h1 Hello —
 
-  article.lh-copy
-    p.mt0.f4 
-      | I'm Jonathan, an independent information security advisor and educator.
-      | I help startup teams 
-      strong establish a security program 
-      | aligned with industry standard frameworks, 
-      | so that you can have peace of mind and focus on building a great product.
+  section
+    article.lh-copy
+      p.mt0.f4 
+        | I'm Jonathan, an independent information security advisor and educator.
+        | I help startup teams 
+        strong establish a security program 
+        | aligned with industry standard frameworks, 
+        | so that you can have peace of mind and focus on building a great product.
 
-    div.mt4
+  section.pv1.ba.pa3.bw1.b--moon-gray.bw2
+    p.lh-copy
       span.db.mv2.f5 Subscribe below to get updates and actionable insights.
-
+    div.mv3
       include ../components/email-form
 
+  section
     h2 Most recent posts
 
     div
-      table
+      table.f6
         tbody
         - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
           each post in routes.blog
             tr.lh-copy
-              td.w4(style="vertical-align:top;") #{ post.date } &nbsp;
-              td(style="vertical-align:top;")  
+              td.pv2.tr(style="vertical-align:top; white-space: nowrap;")
+                span #{ post.date } &#8194;
+              td.pv2(style="vertical-align:top;")  
                 a.link.ttc(href='/blog/' + post.slug)
                   |#{ post.title }
