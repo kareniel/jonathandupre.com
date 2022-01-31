@@ -4,7 +4,7 @@ date: 2022-01-28
 description: A short explanation of why I think you are not ready to have a bug bounty program at your startup yet.
 ---
 
-A bug bounty is a reward for a security researcher who report a vulnerability in your systems.
+A bug bounty is a reward for a security researcher who reports a vulnerability in your systems.
 
 You usually partner with a third-party that handles some of the details for you.
 They list your program on their website and you receive reports by email.
