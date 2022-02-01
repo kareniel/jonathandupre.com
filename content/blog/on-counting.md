@@ -1,6 +1,7 @@
 ---
 title: On counting
 date: 2022-02-01
+description: Why does data accumulate so much? Why do we always need more RAM, more storage space?
 ---
 
 Why does data accumulate so much? Why do we always need more RAM, more storage space?
