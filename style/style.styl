@@ -9,16 +9,9 @@ html, body
 body
   overflow-y: scroll
 
-body ::selection
-  background-color: rgba(0, 68, 255, 0.05);
-  color: rgb(0, 41, 155);
-
-body a::selection 
-  color: $blue;
-
-.selected
-  background-color: rgba(0, 68, 255, 0.05);
-  color: rgb(0, 41, 155);
+body ::selection, .selected, a::selection 
+  background-color: rgba(0, 68, 255, 0.801);
+  color: #fff
 
 h1, h2, h3, h4, h5, h6
   font-family: georgia,times,serif;
