@@ -9,8 +9,8 @@ items:
     name: 'Consulting'
     route: '/services/consulting'
   -
-    name: 'Teaching'
-    route: '/services/teaching'
+    name: 'Training'
+    route: '/services/training'
   -
     name: 'Resources'
     route: '/resources'
