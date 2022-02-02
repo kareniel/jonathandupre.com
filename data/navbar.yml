@@ -1,16 +1,22 @@
 items:
-  # -
-  #   name: 'Research'
-  #   route: '/research'
-  # -
-  #   name: 'About'
-  #   route: '/about'
   -
-    name: 'Consulting'
-    route: '/services/consulting'
+    name: 'About'
+    route: '/about'
   -
-    name: 'Training'
-    route: '/services/training'
+    name: 'Services'
+    route: '/services'
+  # -
+  #   name: 'Consulting'
+  #   route: '/services/consulting'
+  # -
+  #   name: 'Training'
+  #   route: '/services/training'
   -
     name: 'Resources'
     route: '/resources'
+  # -
+  #   name: 'Research'
+  #   route: '/research'
+  -
+    name: 'Contact'
+    route: '/contact'
