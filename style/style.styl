@@ -1,4 +1,5 @@
 $blue=rgb(56, 109, 255);
+$dark-blue=rgb(20, 68, 200);
 .bg-blue
   background-color: $blue;
 
@@ -56,6 +57,19 @@ pre
 a, a:visited, a:active
   color: $blue;
   font-weight: bold;
+  transition: 0.3s;
+
+a:hover
+  color: $dark-blue;
+  transition: 0.3s;
+
+button.bg-blue
+  transition: 0.3s;
+
+button.bg-blue:hover
+  background-color: $dark-blue;
+  border-color: $dark-blue;
+  transition: 0.3s;
 
 blockquote
   margin: 0;

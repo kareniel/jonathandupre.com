@@ -30,3 +30,7 @@ the protection of audit systems
 continuous improvement
 
 Tempting to use FUD to sell security services
+
+Practical applications of a security principle
+
+Things to consider before your first security hire
