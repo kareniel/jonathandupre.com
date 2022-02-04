@@ -15,7 +15,7 @@ You can reduce the likelihood of an event occurring. And you can reduce the impa
 
 They are both important parts of a good security program.
 
-**The first lever is prevent.**
+**The first lever is "Prevent".**
 
 Sometimes, you can bring likelihood all the way to zero. For example, you can choose to not store sensitive user information. This is the decision to avoid risk.
 
@@ -23,7 +23,7 @@ Or you can reduce the likelihood by an order of magnitude. You can give a third-
 
 In both cases, you are trying to prevent something bad from happening.
 
-**The second lever is prepare.**
+**The second lever is "Prepare".**
 
 When you put in place a control to help you detect or recover from an issue, you are controlling the impact. 
 
