@@ -1,13 +1,11 @@
-
-Two levers for risk control: likelihood and impact.
+~~Two levers for risk control: likelihood and impact.~~
+~~Adjusting the scope~~
 
 Basic threat models
 
 Security properties
 
-Falling to the level your systems
-
-~~Adjusting the scope~~
+Falling to the level of your systems
 
 From process to practices
 
@@ -17,7 +15,7 @@ control of the volume of work-in-progress
 
 the systematic reduction of your attack surface
 
-permisions as a function of responsibilities
+permissions as a function of responsibilities
 
 security training based on trust level
 
@@ -34,3 +32,11 @@ Tempting to use FUD to sell security services
 Practical applications of a security principle
 
 Things to consider before your first security hire
+
+Information flows
+
+Document as you go
+
+integrating security assessments into the business service lifecycle process
+
+The real price of new IT systems
