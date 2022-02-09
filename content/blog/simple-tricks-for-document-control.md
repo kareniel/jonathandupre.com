@@ -3,7 +3,7 @@ title: Simple tricks for document control
 date: 2022-01-17
 ---
 
-One type of data that sometimes gets forgotten in software shops is the one found in office-suite documents such as spreadsheets and presentations. In order to control these you could get really intense with the red tape and have people fill forms all the time. But if one of your strengths is being nimble, you might not want to take that approach.
+One type of data that sometimes gets forgotten in software shops is the one found in office-suite documents such as spreadsheets and presentations. In order to control these you could get really intense with the [red tape](/blog/protect-the-fun) and have people fill forms all the time. But if one of your strengths is being nimble, you might not want to take that approach.
 
 ## A simple process you can use
 

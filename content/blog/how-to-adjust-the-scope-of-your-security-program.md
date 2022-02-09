@@ -56,7 +56,7 @@ Sometimes we forget that availability is also a security property.
 
 You're better of with a smaller scope at first. This will make the effort more manageable and the small wins will encourage you to keep going. If you're still unsure of what that should be, then just pick a system, and start there. 
 
-Ignore the rest until you have some level of confidence that this particular scope has been taken care of.
+Ignore the rest until you have some [level of confidence](/blog/measure-things) that this particular scope has been taken care of.
 
 In short, applying these heuristics will allow you to say, with confidence:
 

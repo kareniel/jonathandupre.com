@@ -9,7 +9,7 @@ The reason why they had to take them down is simple: the work involved in identi
 
 That decision was a wise one. They compared the potential loss associated with keeping the sites up with the cost of taking them down and determined that it would be less expensive to take them down. 
 
-It would have been very difficult to guess that this specific event would happen. This case doesn't even involve an actual loss event or an adversary. It would have been difficult to reduce the probability of this kind of event.
+It would have been very difficult to guess that this specific event would happen. This case doesn't even involve an actual loss event or an adversary. It would have been difficult to [reduce the probability](/blog/using-both-risk-control-levers) of this kind of event.
 
 In this particular case, society at large is paying (eg. lawyers can't do their job without having access to some documents that are only available through government systems). Every day that these systems are down probably involves millions of dollars in wasted time, without even counting the cost of actually solving the issue.
 

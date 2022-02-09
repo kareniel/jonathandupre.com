@@ -29,7 +29,7 @@ It gets annoying to always hear "You're not allowed".
 
 But following a practice creates a strong sense of competence.
 
-It's easy to measure. You can count the number of days you followed through. 
+It's easy to measure. You can [count](/blog/on-counting) the number of days you followed through. 
 
 There are no numbers to game. You only need to keep your ratio close to 100%. 
 You can also measure your winning streak, the number of consecutive wins.
