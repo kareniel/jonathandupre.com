@@ -12,7 +12,7 @@ You want to prevent the water from spilling out of the bottle and into your lugg
 
 The plastic bag is not water proof, so you want to be aware of what's going on in there. And you want to react before the water comes out of the plastic bag.
 
-You also want to know you will to react the right way when that happens. This depends on you understanding what's at stake. There's a valuable document in there, and it's vulnerable to liquids.
+You also want to know you will to react the right way when that happens. This depends on you understanding what's at stake. There's [a valuable document](/blog/should-you-keep-an-inventory) in there, and it's vulnerable to liquids.
 
 In the worse case, your passport is unusable. You might need to replace it. 
 
