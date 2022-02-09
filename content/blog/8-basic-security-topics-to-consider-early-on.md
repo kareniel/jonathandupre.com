@@ -12,4 +12,4 @@ Whenever I feel overwhelmed, I go back to the fundamentals. If you're unsure whe
 5. **Reduce your attack surface.** Consolidate tools, configure data lifecycle, deprecate old systems. 
 6. **Control access between trust zones.** Use simple role-based models, assign roles according to responsibilities and leverage native solutions. 
 7. **Model the relevant threats.** Consider your own mistakes, abuses of trust and third-party risk.
-8. **Rehearse your incident response plan.** Make sure you have a reliable secondary communication channel, run your call  tree and get clear on how to classify and react to incidents.
+8. **Rehearse your incident response plan.** Make sure you have a reliable secondary communication channel, run your call  tree and get clear on [how to classify](/blog/classify-incident-severity) and react to incidents.

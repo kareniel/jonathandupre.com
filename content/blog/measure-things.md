@@ -24,4 +24,4 @@ If you are measuring time or financial impact, use a range. Two numbers, instead
 
 "With 90% certainty, this will take us between 10 and 20 hours". If you are not that confident in your estimate, expand the range until you are. Assuming that you use 90% as your confidence level, if your estimates are correct, you should be right 90% of the time.
 
-As you get better at this, your estimates become reliable and planning becomes easier. You can take more risks, because you know what to expect. It's like climbing up a ship's mast to see the horizon. You gain visibility into the future. 
+As you get better at this, your estimates become reliable and [planning](/blog/notes-on-using-kanban) becomes easier. You can take more risks, because you know what to expect. It's like climbing up a ship's mast to see the horizon. You gain visibility into the future. 

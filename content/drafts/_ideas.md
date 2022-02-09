@@ -40,3 +40,5 @@ Document as you go
 integrating security assessments into the business service lifecycle process
 
 The real price of new IT systems
+
+Single points of failure

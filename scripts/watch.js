@@ -3,6 +3,8 @@ var budo = require('budo')
 var slashes = require('connect-slashes')
 var build = require('./build')
 
+process.env.NODE_ENV = 'development'
+
 const PORT = 8080
 
 runBuild()

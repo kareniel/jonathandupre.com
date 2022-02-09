@@ -22,4 +22,6 @@ head
   link(rel="alternate" type="application/rss+xml" href="/rss")
   link(rel="alternate" type="application/atom+xml" href="/atom")
 
-  script(src="https://favorable-harmonious.jonathandupre.com/script.js" data-site="XSCMBBMZ" defer)
+  //- Don't load analytics script during development
+  if process.env.NODE_ENV !== 'development'
+    script(src="https://favorable-harmonious.jonathandupre.com/script.js" data-site="XSCMBBMZ" defer)

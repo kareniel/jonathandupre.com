@@ -33,7 +33,7 @@ And it really comes down to these 4 steps:
 3. Confirm the cyber security threat level
 4. Confirm the cyber security investment levels 
 
-Don't skip these controls. Scoping your security program early in the process will help you avoid spending time on the wrong thing. These controls will save you time and energy.
+Don't skip these controls. [Scoping your security program](/blog/how-to-adjust-the-scope-of-your-security-program) early in the process will help you avoid spending time on the wrong thing. These controls will save you time and energy.
 <!-- 
 The Summary points to the following resources:
 - the [CIS Critical Security Controls](https://www.cisecurity.org/controls);
