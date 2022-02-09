@@ -4,7 +4,7 @@ date: 2022-02-09
 description: Identify, protect, detect, respond, and recover are the 5 primary pillars of a holistic cybersecurity program.
 ---
 
-NIST, in their cybersecurity framework, describe 5 primary pillars of a holistic cybersecurity program. Those are "Identify", "Protect", "Detect", "Respond", and "Recover". Let's look at these 5 functions through a metaphor about travelling.
+NIST, in their cybersecurity framework, describe 5 primary pillars of a holistic cybersecurity program. Those are "Identify", "Protect", "Detect", "Respond", and "Recover". Let's look at these 5 functions through a metaphor about traveling.
 
 When you put that water bottle in your luggage, you want to know if your (paper) passport is in there.
 
