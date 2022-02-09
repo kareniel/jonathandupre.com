@@ -4,9 +4,11 @@ date: 2022-02-09
 description: Identify, protect, detect, respond, and recover are the 5 primary pillars of a holistic cybersecurity program.
 ---
 
-When you put that water bottle in your backpack, you want to know if your (paper) passport is in there.
+NIST, in their cybersecurity framework, describe 5 primary pillars of a holistic cybersecurity program. Those are "Identify", "Protect", "Detect", "Respond", and "Recover". Let's look at these 5 functions through a metaphor about travelling.
 
-You want to prevent the water from spilling out of the bottle and into your bag. So you put in a plastic bag. 
+When you put that water bottle in your luggage, you want to know if your (paper) passport is in there.
+
+You want to prevent the water from spilling out of the bottle and into your luggage. So you put in a plastic bag. 
 
 The plastic bag is not water proof, so you want to be aware of what's going on in there. You want to react before the water comes out of the plastic bag.
 
