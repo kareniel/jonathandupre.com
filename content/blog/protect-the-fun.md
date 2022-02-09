@@ -13,7 +13,7 @@ My thought was: "If I get hurt more, then I won't be able to go for even longer.
 
 This is interesting, I think, because it's probably a common thought.
 
-The point is, it's not that I want to protect my knee, it's that I want to make sure I maximize having fun. That's my metric. Will I still get to have fun?
+The point is, it's not that I want to protect my knee, it's that I want to make sure I maximize having fun. That's my metric. **Will I still get to have fun?**
 
 You don't have to be an expert in security to get that. In fact, maybe working in security makes us forget that sometimes. "It's for your own good". Remember hearing that as a kid?
 
