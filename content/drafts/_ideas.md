@@ -42,3 +42,11 @@ integrating security assessments into the business service lifecycle process
 The real price of new IT systems
 
 Single points of failure
+
+Infrastructure design
+
+Cloud architecture
+
+Automation
+
+hard-coded constant value management
