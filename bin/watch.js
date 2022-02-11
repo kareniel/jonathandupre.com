@@ -1,6 +1,5 @@
 var path = require('path')
 var budo = require('budo')
-var slashes = require('connect-slashes')
 var build = require('./build')
 
 process.env.NODE_ENV = 'development'

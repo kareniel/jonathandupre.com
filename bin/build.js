@@ -13,13 +13,26 @@ var marked = require('marked')
 var stylus = require('stylus')
 var { Feed } = require('feed')
 
-const DIR = generateDirectoryMap([
-'dist', 'pages', 'style', 'public'
+const DirectoryMap = generateDirectoryMap([
+  'dist', 
+  'templates/pages', 
+  'style', 
+  'static'
 ])
 
-const months = [
-  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+const Months = [
+  'Jan', 
+  'Feb', 
+  'Mar', 
+  'Apr', 
+  'May', 
+  'Jun', 
+  'Jul', 
+  'Aug', 
+  'Sep', 
+  'Oct', 
+  'Nov', 
+  'Dec'
 ]
 
 if (require.main === module) {
@@ -37,7 +50,7 @@ function build () {
     id: "https://jonathandupre.com/",
     link: "https://jonathandupre.com/",
     language: "en",
-    // image: "https://diagonal.sh/images/logo/logomark-dark-572.png",
+    // image: "https://jonathandupre.com/images/logo/logomark-dark-572.png",
     favicon: "https://jonathandupre.com/favicon.ico",
     copyright: "© 2012-2022, Jonathan Dupré.",
     generator: "None",
@@ -63,7 +76,7 @@ function build () {
   data.routes = {}
 
   var dynamicRoutes = []
-  var pages = listFilesRecursive(DIR.pages).filter(page => {
+  var pages = listFilesRecursive(DirectoryMap['templates/pages']).filter(page => {
     if (path.basename(page, '.pug')[0] === '_') {
       dynamicRoutes.push(page)
 
@@ -82,6 +95,8 @@ function build () {
 
   fs.writeFileSync('dist/rss', feed.rss2())
   fs.writeFileSync('dist/atom', feed.atom1())
+
+  console.log('Done.')
 
   function generateRoute (route) {
     var dirName = path.dirname(route).split('/').slice(-1)[0]
@@ -156,8 +171,10 @@ function build () {
 }
 
 function getDestination (src) {
-  var subdir = path.relative(DIR.root, path.dirname(src)).split(path.sep).slice(1).join(path.sep)
-  var dir = path.join(DIR.dist, subdir)
+  var d = path.relative(DirectoryMap.root, path.dirname(src))
+  var subdir = d.replace('templates\/pages', '').replace('content', '')
+
+  var dir = path.join(DirectoryMap.dist, subdir)
   var ext = path.extname(src)
   var filename = path.basename(src, ext) + '.html'
   var dest = path.join(dir, filename)
@@ -172,10 +189,10 @@ function getPageKey (filename) {
   return changeCase.camel(basename)
 }
 
-function listFilesRecursive (dir) {
+function listFilesRecursive (dir) {
   var filenames = fs.readdirSync(dir)
 
-  var files = filenames.map(filename => {
+  var files = filenames.map(filename => {
     var filepath = path.join(dir, filename)
 
     return fs.statSync(filepath).isDirectory()
@@ -207,28 +224,28 @@ function loadData () {
 }
 
 function recreateDist () {
-  rimraf.sync(DIR.dist)
-  mkdirp.sync(DIR.dist)
+  rimraf.sync(DirectoryMap.dist)
+  mkdirp.sync(DirectoryMap.dist)
 }
 
 function formatDate (value) {
   var d = new Date(value)
 
-  return `${months[d.getMonth()]} ${String(d.getDate())} ${d.getFullYear()}`
+  return `${Months[d.getMonth()]} ${String(d.getDate())} ${d.getFullYear()}`
 }
 
 function buildCSS () {
-  var styleStr = fs.readFileSync(path.join(DIR.style, 'style.styl'), 'utf8')
+  var styleStr = fs.readFileSync(path.join(DirectoryMap.style, 'style.styl'), 'utf8')
 
   stylus.render(styleStr, { filename: 'style.css' }, function (err, css) {
     if (err) throw err
 
-    fs.writeFileSync(path.join(DIR.dist, 'style.css'), css)
+    fs.writeFileSync(path.join(DirectoryMap.dist, 'style.css'), css)
   })
 }
 
 function copyAssets () {
-  fse.copySync(DIR.public, DIR.dist)
+  fse.copySync(DirectoryMap.static, DirectoryMap.dist)
 }
 
 function generateDirectoryMap (directories) {

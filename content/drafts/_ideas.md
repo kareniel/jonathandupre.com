@@ -50,3 +50,5 @@ Cloud architecture
 Automation
 
 hard-coded constant value management
+
+well-structured written document
