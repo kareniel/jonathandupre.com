@@ -23,17 +23,17 @@ The watch script is just a wrapper around budo, a Node.js dev server. budo watch
 
 There are two javascript files. 
 
-One is the Fathom Analytics bundle. It counts visitors and views in a way that preserves privacy. I pay US$ 14 a month for this service.
+One is the [Fathom Analytics](https://usefathom.com) bundle. It counts visitors and views in a way that preserves privacy. I pay US$ 14 a month for this service.
 
-The other one is from ConvertKit and it makes the email list subscription box work. I pay US$ 9 a month for this service.
+The other one is from [ConvertKit](https://convertkit.com) and it makes the email list subscription box work. I pay US$ 9 a month for this service.
 
-I use Tachyons as a CSS framework. It helps me have a standard visual style and avoid writing boilerplate classes. 
+I use [Tachyons](https://tachyons.io) as a CSS framework. It helps me have a standard visual style and avoid writing boilerplate classes. I use a [cheatsheet](https://roperzh.github.io/tachyons-cheatsheet) to help me find the right class.
 
-The code is hosted on GitHub. I use two branch, the main branch and a development branch.
+The code is hosted [on GitHub](https://github.com/kareniel/jonathandupre.com). I use two branch, the main branch and a development branch.
 
-Netlify hosts the website. They integrate with GitHub. Everytime I merge my changes into the main branch, Netlify runs my build script and deploys the new assets so that they can be served by their web servers.
+[Netlify](https://netlify.com) hosts the website. They integrate with GitHub. Everytime I merge my changes into the main branch, Netlify runs my build script and deploys the new assets so that they can be served by their web servers.
 
-The DNS records are hosted for free with a reputable registrar. There's a CNAME at `www.` that points to the A record, which points to Netlify's load balancers.
+The DNS records are hosted for free with [Namecheap](https://namecheap.com). There's a CNAME at `www.` that points to the A record, which points to Netlify's load balancers.
 
 The domain name costs me around CA$ 15 a year. That brings the total to about CA$ 30 a month, or CA$ 360 a year.
 
