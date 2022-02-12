@@ -1,5 +1,3 @@
-input(type="checkbox" id="navbar-toggle")
-
 nav.flex.justify-center.pt2
   .container.flex.flex-row.justify-between.items-start.w-100
     a.link.black.f7.mv2(href="/")
@@ -19,24 +17,3 @@ nav.flex.justify-center.pt2
         li.f7
           a.link(href=item.route) 
             | #{ item.name }
-
-nav.flex.justify-center.pt2
-  .container.flex.justify-between
-
-    //- ul.pl0.menu.list.flex.items-center.justify-around.mv3.w-100
-    //-   each item in navbar.items
-    //-     li.f7
-    //-       a.link(href=item.route) 
-    //-         | #{ item.name }
-
-
-//-     label#navbar-button.flex.justify-center.items-center.dn-ns.w1.h1.pa1.mh2.tc.bg-black90.br1.ba.bw05.pointer(
-//-       for="navbar-toggle"
-//-       aria-label="Toggle mobile menu"
-//-     )
-
-//- div.menu-mobile.list.flex.dn-ns.mt0.pl2.pv1.bg-black-90.white
-//-  each item in navbar.items
-//-   div.pl0.pv2.tc.db
-//-     a.link(href=item.route)
-//-       | #{ item.name }
