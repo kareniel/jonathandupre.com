@@ -52,3 +52,9 @@ Automation
 hard-coded constant value management
 
 well-structured written document
+
+The perfect secrecy of one-time pads
+
+Practical applications of a security principle
+
+Quantified reduction in risk
