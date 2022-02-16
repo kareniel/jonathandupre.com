@@ -2,7 +2,7 @@ extends /templates/layouts/default.pug
 
 block content
   article.lh-copy
-    h1.ttc #{ post.data.title }
+    h1 #{ post.data.title }
     | !{ post.content }
 
     include /templates/components/cta-schedule-a-call.pug
