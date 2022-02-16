@@ -1,16 +1,44 @@
 ---
-title: A
+title: That one integration
 date: 2022-02-15
-description: ABC
+description: 
 ---
 
+That one integration. 
+
+This guy has been working it for a while.  
+He didn't really document it. 
+But he left a month ago.
+
+No one really knows how the integration works.
+
+But it's business critical.
+If it fails, it will probably take down operations until we fix it.
+
+It probably won't fail, though.
+
+Right?
+
+--
+
+
+I'm reviewing Messari's crypto theses for 2022 living report.
+
+Some observations and notes
+
+inter-protocol bridges
 multi-chain
 cross-chain connectors 
 parachains, zones, and rollups 
 
 information asymmetries in protocol “reporting” standards
 
-I'm reviewing Messari's crypto theses for 2022 living report.
+
+---
+
+
+
+
 
 ---
 
