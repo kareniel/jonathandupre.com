@@ -1,25 +1,68 @@
 ---
-title: That one integration
-date: 2022-02-15
+title: Draft
+date: 2022-02-16
 description: 
 ---
 
-That one integration. 
+See = download
 
-This guy has been working it for a while.  
-He didn't really document it. 
-But he left a month ago.
+With a Xerox machine, you could copy information thousands of times a day. With a modern computer, you can copy information as much as you want.
 
-No one really knows how the integration works.
+Through a whisper, you can duplicate a secret at the speed of social networks. 
 
-But it's business critical.
-If it fails, it will probably take down operations until we fix it.
 
-It probably won't fail, though.
 
-Right?
 
---
+
+
+
+Point 
+
+
+---
+
+exhaust data
+
+---
+
+teams
+
+Marketing
+HR & Legal
+Product & Design
+Creative Production
+Engineering
+Customer Service
+Operations
+Finance
+IT & Support
+Manufacturing
+Sales & Account Mgmt.
+Other / Personal
+
+---
+
+Lending
+Trading
+Derivatives
+Options
+Payments
+Wallets
+Interfaces
+Asset management
+Infrastructure
+Insurance
+Assets
+Stablecoins
+Scaling
+Analytics
+Education
+Community
+
+---
+actual consent vs "i'm too desperate to set boundaries" consent
+
+---
 
 
 I'm reviewing Messari's crypto theses for 2022 living report.
@@ -78,3 +121,6 @@ lint
 test 
 review
 publish
+
+
+---
