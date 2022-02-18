@@ -4,19 +4,44 @@ date: 2022-02-16
 description: 
 ---
 
-See = download
+Build capacity instead of building dependency.
+Improve the organization's security maturity so that you're able to trust yourself more as time goes on.
 
-With a Xerox machine, you could copy information thousands of times a day. With a modern computer, you can copy information as much as you want.
+Here are some ways you can start creating a continuous improvement cycle.
 
-Through a whisper, you can duplicate a secret at the speed of social networks. 
+- Write specifications for your systems. You probably won't do it before you start but it's never too late.
+- Simplify the architecture. Lower cognitive overhead means less bugs.
+- Build tools around the development process. Optimize for developer workflows.
+- Figure out how to monitor your running systems. Be able to know what state your system is in.
+
+You can't depend on an external company to do this work for you.
+It's core to your business to understand your product and be able to manage it.
 
 
+---
+
+bridges
+
+---
+
+If you count  
+
+Increasing revenue can sometimes result in higher costs and lower profit margins
+
+Focusing on branding and quality can help sustain higher prices on sales and ensure higher profit margins over the long term
 
 
+operating near maximum efficiency in terms of reducing costs, having negotiated the best possible prices for materials, personnel, and facilities
+
+be in a market that is so competitive or an economy that is so depressed that increasing sales numbers or raising prices are not realistic goals
+
+quality
 
 
+fulfill promises
+protect revenue
+reduce costs
 
-Point 
 
 
 ---
