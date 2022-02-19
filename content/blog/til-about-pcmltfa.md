@@ -30,7 +30,7 @@ It comes down to:
 1. Compliance requirements. Things like KYC, record keeping, and what kind of transactions to report.
 1. Penalties for not being compliant.
 
-FINTRAC has a [privacy policy](https://www.fintrac-canafe.gc.ca/atip-aiprp/2011-pp-eng). One of the annexes describes the [provisions] that the PCMLTFA contains to promote the privacy of Canadians. 
+FINTRAC has a [privacy policy](https://www.fintrac-canafe.gc.ca/atip-aiprp/2011-pp-eng). One of the annexes describes the provisions that the PCMLTFA contains to promote the privacy of Canadians. 
 
 - Unauthorized disclosure is punishable by up to 5 years in jail, or a fine of up to $500,000 or both.
 - FINTRAC's Annual Report includes the management guidelines and policies for the protection of human 
