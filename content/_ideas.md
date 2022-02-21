@@ -58,3 +58,9 @@ The perfect secrecy of one-time pads
 Practical applications of a security principle
 
 Quantified reduction in risk
+
+DNS
+
+Security audit cheatsheet
+
+Security for small digital business owners
