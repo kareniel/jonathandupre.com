@@ -6,7 +6,7 @@ description: I took a look at CertiK's "The State of DeFi Security 2021" this mo
 
 Security audits for DeFi projects are in high demand. Having your code audited is now a common criteria used by consumers to determine if they should engage with a project or not.
 
-CertiK is one of the well-known blockchain security audit firms. I took a look at CertiK's report "The State of DeFi Security 2021" this morning. I thought I'd share some insights.
+CertiK is one of the well-known blockchain security audit firms. I took a look at their report "The State of DeFi Security 2021" this morning. I thought I'd share some insights.
 
 Centralization issues accounted for about 16% of their findings. These are security vulnerabilities introduced at the design stage, meaning that they can't be solved by "fixing" code. They're usually a result of contract developers including functions that give them some control over some aspect of the system.
 
