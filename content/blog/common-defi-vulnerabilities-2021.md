@@ -4,7 +4,7 @@ date: 2022-02-23
 description: I took a look at CertiK's "The State of DeFi Security 2021" this morning. I thought I'd share some insights.
 ---
 
-Security audits for DeFi projects are in high demand. Having had your code audited is now a common criteria used by consummers to determine if they should engage with a project or not.
+Security audits for DeFi projects are in high demand. Having your code audited is now a common criteria used by consumers to determine if they should engage with a project or not.
 
 CertiK is one of the well-known blockchain security audit firms. I took a look at CertiK's report "The State of DeFi Security 2021" this morning. I thought I'd share some insights.
 
