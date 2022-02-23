@@ -39,7 +39,7 @@ Document as you go
 
 integrating security assessments into the business service lifecycle process
 
-The real price of new IT systems
+~The real price of new IT systems~
 
 Single points of failure
 
@@ -64,3 +64,25 @@ DNS
 Security audit cheatsheet
 
 Security for small digital business owners
+
+Rapid Risk Assessments
+
+TIL liberal arts education is all about numbers.
+
+Why is trivium the place where the roads meet?
+
+Law of Identity
+
+logic, dialectic. systematically removing contradictions, thereby producing factual knowledge that can be trusted
+
+How many lightbulbs do you have in your house? How do you know when it's time to replace them? 
+
+reducing costs is often a better way to increase a business’s net margin than increasing revenue
+
+You double your effective interest rate by putting your earned interest straight towards paying down your debt
+
+Le barbier pour barbier coupe ses propres cheveux
+
+Tempting to use FUD to sell security servicesà
+
+DeFi safety scores
