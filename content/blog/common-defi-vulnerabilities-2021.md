@@ -10,7 +10,7 @@ CertiK is one of the well-known blockchain security audit firms. I took a look a
 
 Centralization issues accounted for about 16% of their findings. These are security vulnerabilities introduced at the design stage, meaning that they can't be solved by "fixing" code. They're usually a result of contract developers including functions that give them some control over some aspect of the system.
 
-Centralization issues lead to vulnerability to [attacks we were familiar with](blog/smart-contract-risk-is-not-your-only-risk) before web3, such as the theft of private keys.
+Centralization issues lead to vulnerability to [attacks we were familiar with](smart-contract-risk-is-not-your-only-risk) before web3, such as the theft of private keys.
 
 Controls to compensate this kind of design decision include protecting privileged action with a timelock, using a multi-sig wallet, and delegating the authority to a DAO.
 
