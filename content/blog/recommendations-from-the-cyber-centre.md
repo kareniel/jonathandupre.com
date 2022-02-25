@@ -6,7 +6,7 @@ description: The CCCS shared a set of recommended proactive network monitoring a
 
 The Canadian Centre for Cyber Security (CCCS) monitor the cyber threat environment in Canada and globally.
 
-Last week, they published a bulletin to remind the cybersecurity community to raise awareness about Russian-backed cyber threat activity.
+Last week, they [published a bulletin](https://cyber.gc.ca/en/guidance/cyber-threat-bulletin-cyber-centre-reminds-canadian-critical-infrastructure-operators) to remind the cybersecurity community to raise awareness about Russian-backed cyber threat activity.
 
 They shared a set of recommended proactive network monitoring and mitigations for Canadians organizations. 
 
