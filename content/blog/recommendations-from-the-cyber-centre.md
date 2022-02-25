@@ -10,7 +10,7 @@ Last week, they [published a bulletin](https://cyber.gc.ca/en/guidance/cyber-thr
 
 They shared a set of recommended proactive network monitoring and mitigations for Canadians organizations. 
 
-## Be able to isolate components
+## Be ready to isolate components
 
 1. Consider which components of your system would be attractive to disrupt.
 2. Be prepared to isolate components and services, both from the internet and from internal networks.
