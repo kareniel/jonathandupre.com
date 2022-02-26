@@ -83,7 +83,7 @@ You double your effective interest rate by putting your earned interest straight
 
 Le barbier pour barbier coupe ses propres cheveux
 
-Tempting to use FUD to sell security servicesà
+Tempting to use FUD to sell security services
 
 DeFi safety scores
 
