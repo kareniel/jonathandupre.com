@@ -6,7 +6,7 @@ date: 2021-11-05
 A curated list of resources about web3 security.
 Mostly focused on Ethereum for now, but more coming soon!
 
-# Table of content
+# Table of contents
 
 - [Governance](#governance)
 - [Architecture](#architecture)
