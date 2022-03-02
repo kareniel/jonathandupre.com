@@ -5,7 +5,7 @@ date: 2019-11-19
 
 A curated list of resources about security CTF and wargame challenge design.
 
-## Table of content
+## Table of contents
 
 - [General](#general)
 - [Approaches & Specific Designs](#approaches--specific-designs)
