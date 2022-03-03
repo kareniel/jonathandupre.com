@@ -1,6 +1,6 @@
 ---
 title: Information assurance
-date: 2022-03-01
+date: 2022-03-02
 description: We are custodians of each other's private information. And information spreads like ink in water.
 ---
 
