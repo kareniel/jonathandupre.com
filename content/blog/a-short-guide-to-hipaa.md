@@ -142,7 +142,7 @@ The safeguards described in the regulation text look like what you would expect 
 
 The [HITRUST](https://hitrustalliance.net) framework provides mapping from these controls to other frameworks like NIST and ISO27K1.
 
-# More information
+## More information
 
 Most of the information in this post comes from the [Combined Regulation Text](https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/combined-regulation-text/index.html) of all the regulatory standards.
 
