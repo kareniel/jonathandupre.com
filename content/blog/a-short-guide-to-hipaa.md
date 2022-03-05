@@ -1,13 +1,13 @@
 ---
-title: A short guide to HIPAA
+title: A primer on HIPAA for software startups
 date: 2022-03-04
 description: 
 ---
 
 The Health Insurance Portability and Accountability Act was enacted in 1996 in the USA.
-It amends the Internal Revenue Code of 1986.
+It amends the Internal Revenue Code of 1986, and was last updated in 2013.
 
-Its goals are many:
+It has many goals:
 
 - Improve portability and continuity of health insurance coverage.
 - Improve access to long-term care services and coverage.
@@ -18,16 +18,11 @@ But the one of interest here is:
 
 - Combat waste, fraud, and abuse in health insurance and health care delivery.
 
-Title II: "Preventing Health Care Fraud and Abuse" intends to protect the security and privacy of Protected Health Information, or PHI.
+Title II is called "Preventing Health Care Fraud and Abuse". It intends to protect the security and privacy of Protected Health Information, or PHI. For that, it includes provisions (rules) for Privacy, Security, and Penalties.
 
-For that, it includes provisions for:
+This post won't cover the whole range of businesses that have to comply with the regulation. It's aimed at startups who's product design involves them using PHI.
 
-1. Privacy, and
-2. Penalties
-
-This post won't cover the whole range of businesses that have to comply with the regulation. It's aimed at startups who's product involves recording PHI.
-
-# Governance
+## Who's responsible for what?
 
 HIPAA is regulated by the USA Department of Health's Office for Civil Rights (OCR).
 
@@ -37,22 +32,22 @@ There are three roles modeled in the act:
 
 1. **Covered Entities** - A health care provider who transmits any health information in electronic form. This would be users of your platform. 
 2. **Business Associate** - An entity that provides services to, or performs certain functions involving the use or disclosure of PHI on your client's behalf. This is you, the apps you use, and your cloud service providers.
-3. **Subcontractors** - An entity to whom a business associate delegates a function, activity, or service. These are the vendors you work with. 
+3. **Subcontractors** - An entity to whom a business associate delegates a function, activity, or service. 
 
 A covered entity may be a business associate of another covered entity.
 
-Covered entities and business associates have these responsibilities:
+You and your clients have these responsibilities:
 
 1. Provide records and compliance reports.
 2. Cooperate with complaint investigations and compliance reviews.
 3. Permit OCR to access anything required to help them figure out if you are compliant. This includes facilities, books, records, accounts, and other sources of information, including PHI.
 4. Ensure you implement and maintain the systems needed to safeguard PHI
 
-Business associates and subcontractors are liable for non-compliance with HIPAA.
+You and your subcontractors are liable for non-compliance with HIPAA.
 
-# Breach notification and complaints
+## What's the deal?
 
-**TLDR:** You have to be aware that a breach occured, and report it. Also, people can file a complaint against you, which the OCR can investigate as much as they want. Your clients also have obligations. It's in your best interest to educate them.
+**TLDR:** You have to be aware that a breach occured, and report it as soon as possible. Also, people can file a complaint against you, which the OCR can investigate as much as they want. Your clients also have obligations. It's in your best interest to educate them.
 
 Your clients must provide notification of the breach to affected individuals, the Secretary, and, in certain circumstances, to the media.
 
@@ -81,9 +76,10 @@ A person who believes one of your clients or you are not complying with the rule
 
 An investigation can include a review of the policies, procedures, or practices of you or your clients, and of the circumstances regarding any alleged violation.
 
-# Violations
 
-Violations can incur fines between $100 – $50,000. They also stack up to a maximum amount. That amount is $25,000 in the best case, and $1.5M in the worst case.
+## How much could it cost?
+
+Violations can incur fines between $100 and $50,000. Fines can add up to a maximum amount of $25,000 in the best case, and $1.5M in the worst case.
 
 Factors that are considered to determine the maximum amount include: 
 
@@ -100,37 +96,29 @@ Which really comes down to asking the following questions:
 3. Was the breach a result of willful neglect?
 4. Have attempts been made to correct the violation?
 
-# Data
 
+## What are we protecting?
 
-The regulation text includes a model for describing data.
+Individually identifiable health information.
 
-- **Transaction**: The transmission of information between two parties to carry out
-financial or administrative activities related to health care.
-- **Data set**: A meaningful unit of information exchanged between two parties to a transaction.
-- **Data element**: The smallest named unit of information in a transaction.
-- **Code set**: Any set of codes used to encode data elements, such as tables of terms, medical concepts, medical diagnostic codes, or medical procedure codes. A code set includes the codes and the descriptors of the codes
-- **Data content**: All the data elements and code sets inherent to a transaction, and not related to the format of the transaction. Data elements that are related to
-the format are not data content.
-- **Data condition**: The rule that describes the circumstances under which a covered entity must use a particular data element or segment
-
-Looking at the list of transactions included in the regulation can give you some insight into where to look when analyzing your own systems.
+The transactions included in the regulation might give you some insight into where to look for PHI.
 
 1. Health care claims or equivalent encounter information.
 2. Health care payment and remittance advice.
-3. Coordination of benefits.
+3. Coordination of insurance benefits.
 4. Health care claim status.
 5. Enrollment and disenrollment in a health plan.
-6. Eligibility for a health plan.
+6. Verification of eligibility for a health plan.
 7. Health plan premium payments.
 8. Referral certification and authorization.
 9. First report of injury.
-10. Health claims attachments.
+10. Health claims attachment uploads.
 11. Health care electronic funds transfers (EFT) and remittance advice.
-12. Other transactions that the OCR may prescribe by regulation.
+12. **Other transactions that the OCR may prescribe by regulation.**
 
+> The transmission of information between two parties to carry out financial or administrative activities related to health care.
 
-# Security and privacy requirements
+# What are the Security and Privacy requirements?
 
 You are responsible to ensure the confidentiality, integrity, and availability of all PHI you or your clients create, receive, maintain, or transmit.
 
@@ -148,12 +136,11 @@ factors:
 3. The costs of security measures
 4. Probability and criticality of potential risks to PHI
 
-# The required safeguards
+> Individually identifiable health information should be protected with reasonable administrative, technical, and physical safeguards to ensure its confidentiality, integrity, and availability and to prevent unauthorized or inappropriate access, use, or disclosure.
 
-> Individually identifiable health information should be  protected with reasonable administrative, technical, and physical safeguards to ensure its confidentiality, integrity, and availability and to prevent unauthorized or inappropriate access, use, or disclosure.
+The safeguards described in the regulation text look like what you would expect from a standard security management system. They have three categories: administrative, physical, and technical. 
 
-The safeguards described in the regulation text look like what you would expect from a standard security management system. The **HITRUST** CSF provides mapping from these controls to other frameworks like NIST and ISO27K1.
-
+The [HITRUST](https://hitrustalliance.net) framework provides mapping from these controls to other frameworks like NIST and ISO27K1.
 
 # More information
 
@@ -165,32 +152,15 @@ You can also read the [Health Insurance Portability and Accountability Act of 19
 
 <!-- 
 
+The regulation text includes the following model for describing data:
 
-Data includes:
+- **Data set**: A meaningful unit of information exchanged between two parties to a transaction.
+- **Data element**: The smallest named unit of information in a transaction.
+- **Code set**: Any set of codes used to encode data elements, such as tables of terms, medical concepts, medical diagnostic codes, or medical procedure codes. A code set includes the codes and the descriptors of the codes
+- **Data content**: All the data elements and code sets inherent to a transaction, and not related to the format of the transaction. Data elements that are related to
+the format are not data content.
+- **Data condition**: The rule that describes the circumstances under which a covered entity must use a particular data element or segment
 
-Information related to:
-
-- Diseases
-- Injuries
-- Impairments
-- Other health problems and their manifestations
-- Causes of injury, disease, impairment, or other health problems
-- Drugs
-- Physician services
-- Physical and occupational therapy services
-- Radiologic procedures
-- Clinical laboratory tests
-- Other medical diagnostic procedures
-- Hearing and vision services
-- Transportation services including ambulance
-- Medical supplies
-- Orthotic and prosthetic devices
-- Durable medical equipment
-- Health care electronic funds transfers and remittance advice transaction
-- Payment information about the transfer of funds
-- Payment processing information
-- Explanation of benefits
-- Remittance advice
 
 
 [hipaa-simplification](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/combined/hipaa-simplification-201303.pdf)
@@ -252,7 +222,6 @@ disclosure of protected health information from such covered
 entity or arrangement
 
 
-Individually identifiable health information
 
 created or received by a health care provider
 
