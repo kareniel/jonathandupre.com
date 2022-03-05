@@ -118,7 +118,7 @@ The transactions included in the regulation might give you some insight into whe
 
 > The transmission of information between two parties to carry out financial or administrative activities related to health care.
 
-# What are the Security and Privacy requirements?
+## What are the Security and Privacy requirements?
 
 You are responsible to ensure the confidentiality, integrity, and availability of all PHI you or your clients create, receive, maintain, or transmit.
 
