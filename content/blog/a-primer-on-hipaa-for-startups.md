@@ -1,5 +1,5 @@
 ---
-title: A primer on HIPAA for software startups
+title: A primer on HIPAA for startups
 date: 2022-03-04
 description: The Health Insurance Portability and Accountability Act was created to combat waste, fraud, and abuse in health insurance and health care delivery.
 ---
