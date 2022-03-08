@@ -89,3 +89,4 @@ DeFi safety scores
 
 The architecture of ENS
 
+Confusing the interaction for the intention

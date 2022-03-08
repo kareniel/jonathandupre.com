@@ -45,9 +45,9 @@ You and your clients have these responsibilities:
 
 You and your subcontractors are liable for non-compliance with HIPAA.
 
-## What's the deal?
+## What are my responsibilities in case of a breach?
 
-**TLDR:** You have to be aware that a breach occured, and report it as soon as possible. Also, people can file a complaint against you, which the OCR can investigate as much as they want. Your clients also have obligations. It's in your best interest to educate them.
+**TLDR:** You have to be aware that a breach occurred, and report it as soon as possible. Also, people can file a complaint against you, which the OCR can investigate as much as they want. Your clients also have obligations. It's in your best interest to educate them.
 
 Your clients must provide notification of the breach to affected individuals, the Secretary, and, in certain circumstances, to the media.
 
@@ -77,7 +77,7 @@ A person who believes one of your clients or you are not complying with the rule
 An investigation can include a review of the policies, procedures, or practices of you or your clients, and of the circumstances regarding any alleged violation.
 
 
-## How much could it cost?
+## What are the costs for non-compliance?
 
 Violations can incur fines between $100 and $50,000. Fines can add up to a maximum amount of $25,000 in the best case, and $1.5M in the worst case.
 
