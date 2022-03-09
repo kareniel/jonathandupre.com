@@ -90,3 +90,9 @@ DeFi safety scores
 The architecture of ENS
 
 Confusing the interaction for the intention
+
+The word production
+
+The infrastructure is decentralized so you can build secure centralized organizations.
+
+Tokens and DAOs will be used to power autonomous IT infrastructure
