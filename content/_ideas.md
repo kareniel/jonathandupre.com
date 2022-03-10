@@ -96,3 +96,7 @@ The word production
 The infrastructure is decentralized so you can build secure centralized organizations.
 
 Tokens and DAOs will be used to power autonomous IT infrastructure
+
+dont let security slow you down
+
+test your assumptions
