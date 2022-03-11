@@ -99,4 +99,4 @@ Tokens and DAOs will be used to power autonomous IT infrastructure
 
 dont let security slow you down
 
-test your assumptions
+~~test your assumptions~~
