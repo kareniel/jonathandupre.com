@@ -1,15 +1,13 @@
 ~~Two levers for risk control: likelihood and impact.~~
 ~~Adjusting the scope~~
-
-Basic threat models
-
-Security properties
-
-Falling to the level of your systems
-
-From process to practices
-
-the clear documentation of critical business contracts 
+~~test your assumptions~~
+~The real price of new IT systems~
+~Basic threat models~
+~Security properties~
+~Falling to the level of your systems~
+~From process to practices~
+~the clear documentation of critical business contracts~
+~dont let security slow you down~
 
 control of the volume of work-in-progress
 
@@ -38,8 +36,6 @@ Information flows
 Document as you go
 
 integrating security assessments into the business service lifecycle process
-
-~The real price of new IT systems~
 
 Single points of failure
 
@@ -97,6 +93,6 @@ The infrastructure is decentralized so you can build secure centralized organiza
 
 Tokens and DAOs will be used to power autonomous IT infrastructure
 
-dont let security slow you down
+writing down decisions, ideas, or plans creates accountability
+allow people to review and reflect on what was said at a later time, without the biases of memory
 
-~~test your assumptions~~
