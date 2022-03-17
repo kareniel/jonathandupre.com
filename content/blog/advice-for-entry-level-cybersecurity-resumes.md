@@ -1,6 +1,7 @@
 ---
 title: Advice for entry-level cybersecurity resumes
 date: 2022-01-18
+description: Today, I had the chance to review someone's resume and give a bit of advice. 
 ---
 
 Today, I had the chance to review someone's resume and give a bit of advice. I thought I'd post part of my reply here since it might be helpful to other people.

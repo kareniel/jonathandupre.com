@@ -1,6 +1,7 @@
 ---
 title: Default to safe, private and secure
 date: 2021-12-17
+description: You always have to pick a default setting.
 ---
 
 I get at this point between 5-10 Discord DMs a day.

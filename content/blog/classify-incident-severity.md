@@ -1,6 +1,7 @@
 ---
 title: How to classify incident severity
 date: 2021-12-10
+description: You need some kind of standard way to rate the severity of an incident.
 ---
 
 The first set of controls in the [Canadian Baseline](7-organizational-controls) framework is to develop an incident response plan. This plan has a few different dimensions.

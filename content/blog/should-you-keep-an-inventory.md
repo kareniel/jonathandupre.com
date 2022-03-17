@@ -1,6 +1,7 @@
 ---
 title: Should you keep an inventory?
 date: 2021-12-15
+description: How can you know you are deploying the right quantity of resources if you don't even know what you are protecting?
 ---
 
 The Quebec government had to take down over 3900 of their own websites this week. This is after the announcement that a widely used logging library patched a high severity vulnerability. 

@@ -6,7 +6,7 @@ description: People always ask us for exceptions. And we get in their way. All t
 
 Security people sometimes get a bad reputation for our attitudes. Our role involves protecting, so we say "no" a lot. 
 
-And we're always the ones with the bad news. Always bringing up problems, or issues, or dangers, or weaknesses.
+And we're always the ones with the bad news. Always bringing up problems, or [issues](that-one-integration), or dangers, or weaknesses.
 
 People always ask us for exceptions. And we get in their way. All the time.
 

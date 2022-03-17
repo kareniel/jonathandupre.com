@@ -10,7 +10,7 @@ I don't have a clear answer to those questions. But I can share an observation t
 
 To count without having a concept of a number, you need some sort of a counter. Tally marks, fingers on a hand, shells.
 
-Imagine you're counting sheep using pebbles.
+Imagine you're [counting sheep](measure-things) using pebbles.
 
 A complete count of every sheep will produce an equal amount of pebbles.
 
