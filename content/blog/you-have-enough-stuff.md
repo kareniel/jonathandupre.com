@@ -6,7 +6,7 @@ description: You have the ability to herd fleets of compute nodes and wrangle da
 
 You have a lot of apps.
 
-You don't even know how many. Who's keeping count?
+You don't even know how many. Who's [keeping count](on-counting)?
 
 You have a lot of data.
 

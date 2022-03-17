@@ -1,6 +1,7 @@
 ---
 title: Controls when you don't have control
 date: 2022-01-26
+description: Security controls can involve a measure of imposition, and of voluntary participation. There are some things that you can't control. 
 ---
 
 Last night I was talking with a friend about the security of his accounting business.

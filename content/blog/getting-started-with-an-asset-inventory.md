@@ -1,6 +1,7 @@
 ---
 title: Getting started with an asset inventory
 date: 2022-01-24
+description: Here are some tips to help you get started with an asset inventory.
 ---
 
 Do you have an asset inventory yet? If not, schedule some time to start one.

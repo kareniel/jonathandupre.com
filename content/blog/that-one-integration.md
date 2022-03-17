@@ -12,7 +12,7 @@ But he left a month ago. And he didn't really document it.
 
 No one knows how the integration works. We just don't touch it.
 
-But yeah, it's business critical. If it fails, it will probably take operations down until we fix it. Who knows how long that could take. 
+But yeah, it's business critical. If it fails, it will probably [take operations down](classify-incident-severity) until we fix it. Who knows how long that could take. 
 
 It probably won't fail, though.
 

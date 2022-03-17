@@ -1,6 +1,7 @@
 ---
 title: 8 basic security topics to consider early on
 date: 2022-01-13
+description: Whenever I feel overwhelmed, I go back to the fundamentals. If you're unsure where to start, consider these 8 basic topics.
 ---
 
 Whenever I feel overwhelmed, I go back to the fundamentals. If you're unsure where to start, consider these 8 basic topics.

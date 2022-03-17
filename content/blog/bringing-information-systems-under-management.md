@@ -1,6 +1,7 @@
 ---
 title: Bringing information systems under management
 date: 2022-02-10
+description: When infosec listens to the needs of the business, other subtle benefits becomes clearer. Managing information systems optimizes opportunity.
 ---
 
 Value flows through a business like rivers through a valley.

@@ -1,6 +1,7 @@
 ---
 title: How to adjust the scope of your security program
 date: 2022-01-25
+description: Since security is probably not at the core of your business, you'll want to focus your attention on what matters the most.
 ---
 
 When you bootstrap a security program, one of the initial concerns is that of scope.

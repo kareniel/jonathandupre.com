@@ -1,6 +1,7 @@
 ---
 title: 7 organizational controls
 date: 2021-12-09
+description: Don't skip these controls. Scoping your security program early in the process will help you avoid spending time on the wrong thing.
 ---
 
 There are 7 Organizational Controls you should be expected to have in place. They are defined in the Baseline Cyber Security Controls for Canadian SMOs.
@@ -34,6 +35,7 @@ And it really comes down to these 4 steps:
 4. Confirm the cyber security investment levels 
 
 Don't skip these controls. [Scoping your security program](/blog/how-to-adjust-the-scope-of-your-security-program) early in the process will help you avoid spending time on the wrong thing. These controls will save you time and energy.
+
 <!-- 
 The Summary points to the following resources:
 - the [CIS Critical Security Controls](https://www.cisecurity.org/controls);
