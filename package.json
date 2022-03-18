@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run watch",
     "watch": "ts-node bin/watch",
-    "build": "node bin/build",
+    "build": "ts-node bin/build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix --ext .js,.ts"
   },
