@@ -12,4 +12,4 @@ We expect security people to be all-knowing wizards of technology.
 
 While cybersecurity touches many dimensions of IT systems, the underlying issues relate to the management of risk, trust, and compliance. All of which are organization and business-related, not technical.
 
-When hiring security people, consider that. It's achievable to train someone on the technical dimension of the work. If they are a good cultural fit, they will have better chances of success.
+When hiring security people, consider that. It's achievable to [train someone](adopting-practices-instead-of-rules) on the technical dimension of the work. If they are a good cultural fit, they will have better chances of success.

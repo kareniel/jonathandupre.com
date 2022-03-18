@@ -16,7 +16,7 @@ From you, to them, to their organization, to the outside world.
 
 You had conversations, you transferred files. They made evaluations and computations. They took notes and will remember things.
 
-We are custodians of each other's private information.
+We are [custodians](things-customers-ask-for) of each other's private information.
 
 And information spreads like ink in water.
 

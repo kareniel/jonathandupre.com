@@ -6,7 +6,7 @@ description: You can have the most secure architecture in the world, but if you 
 
 You can have the most secure architecture in the world, but if you don't test the implementation, you won't realize it when things go wrong.
 
-Modern IT infrastructures change quickly, and assumptions don't age well.
+Modern IT infrastructures change quickly, and [assumptions don't age well](composing-faulty-assumptions).
 
 Where do you think your beloved app is the weakest? 
 
