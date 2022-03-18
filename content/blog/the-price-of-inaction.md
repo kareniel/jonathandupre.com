@@ -15,7 +15,7 @@ To really see, you need to be away from the urgent, the day to day. You need to 
 But not looking is worse. Because you know this will get worse later. 
 Dead tech rots. Then it grows into a monster.
 
-So you address problems as they arise, you sort them out as you go.
+So you address problems as they arise, you [sort them out](risk-matrix) as you go.
 
 You refuse to pay the price of inaction.
 
