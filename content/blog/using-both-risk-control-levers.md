@@ -33,4 +33,4 @@ A solid backup program eliminates most of the impact of ransomware.
 
 In any case, discussions about control selection should be nuanced. Remember to consider different view points when listing pros and cons. 
 
-The unique perspectives that your team members will contribute might surprise you. 
+The unique perspectives that [your team members](hiring-for-cultural-fit) will contribute might surprise you. 

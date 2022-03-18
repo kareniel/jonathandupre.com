@@ -15,4 +15,5 @@ To avoid getting spammed/scammed, you can toggle a switch in each-individual-ser
 This option is turned on by default.
 
 Discord PMs probably had to make a trade-off between usability and security. I'm not sure.
+
 But you can't avoid this decision. You always have to pick a default setting.
