@@ -10,7 +10,7 @@ A value-stream map models the value proposition derived by the organization's cu
 
 Value stream mapping happens to be useful in information security too.
 
-If you follow value, from its creation to its capture, you can identify every IT system involved. It's like a treasure map.
+If you follow value, from its creation to its capture, you can [identify every IT system involved](getting-started-with-an-asset-inventory). It's like a treasure map.
 
 We often think of information security in terms of downside protection.
 
