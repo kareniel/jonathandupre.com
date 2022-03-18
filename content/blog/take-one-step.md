@@ -11,7 +11,7 @@ There are many ways you can take steps to create a continuous improvement cycle.
 - **Write specifications**. You probably won't do it before you start shipping code but it's never too late.
 - **Monitor running systems**. You want to be able to know what state your system is in, from development to production.
 
-Improve your system security so that you're able to trust your systems more as time goes on.
+[Improve your system security](bringing-information-systems-under-management) so that you're able to trust your systems more as time goes on.
 
 You can't depend on an external company to own this work for you.
 

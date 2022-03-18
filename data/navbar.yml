@@ -1,10 +1,4 @@
 items:
-  -
-    name: 'About'
-    route: '/about'
-  -
-    name: 'Services'
-    route: '/services'
   # -
   #   name: 'Consulting'
   #   route: '/services/consulting'
@@ -14,6 +8,12 @@ items:
   -
     name: 'Resources'
     route: '/resources'
+  -
+    name: 'Services'
+    route: '/services'
+  -
+    name: 'About'
+    route: '/about'
   # -
   #   name: 'Research'
   #   route: '/research'

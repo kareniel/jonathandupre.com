@@ -5,10 +5,11 @@
   "author": "Jonathan Dupré <hello@jonathandupre.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "npm run watch", 
-    "watch": "node bin/watch",
+    "start": "npm run watch",
+    "watch": "ts-node bin/watch",
     "build": "node bin/build",
-    "test": "standard --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix --ext .js,.ts"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,16 @@
   },
   "homepage": "https://github.com/kareniel/www#readme",
   "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "budo": "^11.6.4",
     "change-case": "^3.0.2",
     "copy": "^0.0.1",
     "dotenv": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
     "feed": "^4.2.2",
     "fs-extra": "^7.0.1",
     "gray-matter": "^4.0.1",
@@ -30,10 +37,11 @@
     "mkdirp": "^0.5.1",
     "pug": "^3.0.2",
     "rimraf": "^2.6.3",
-    "standard": "^16.0.4",
     "stylus": "^0.54.5",
     "tape": "^4.9.2",
     "trash": "^4.3.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2",
     "yaml": "^1.2.0"
   }
 }
