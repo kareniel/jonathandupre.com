@@ -1,12 +1,9 @@
 ---
-title: Web3 Security
+title: EVM Ecosystem Security
 date: 2021-11-05
 ---
 
-A curated list of resources about web3 security.
-Mostly focused on Ethereum for now, but more coming soon!
-
-# Table of contents
+# Contents
 
 - [Governance](#governance)
 - [Architecture](#architecture)
