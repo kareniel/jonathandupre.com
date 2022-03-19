@@ -17,7 +17,7 @@ dotenv.config();
 
 const DirectoryMap = generateDirectoryMap([
   'dist',
-  'templates/pages',
+  'pages',
   'style',
   'static',
 ]);
@@ -79,7 +79,7 @@ function build() {
   data.routes = {};
 
   const dynamicRoutes: Array<string> = [];
-  const pages = listFilesRecursive(DirectoryMap['templates/pages']).filter((page) => {
+  const pages = listFilesRecursive(DirectoryMap.pages).filter((page) => {
     if (path.basename(page, '.pug')[0] === '_') {
       dynamicRoutes.push(page);
 
@@ -171,7 +171,7 @@ function build() {
 
 function getDestination(src) {
   const d = path.relative(DirectoryMap.root, path.dirname(src));
-  const subdir = d.replace('templates/pages', '').replace('content', '');
+  const subdir = d.replace('pages', '').replace('content', '');
 
   const dir = path.join(DirectoryMap.dist, subdir);
   const ext = path.extname(src);
