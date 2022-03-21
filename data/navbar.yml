@@ -6,11 +6,11 @@ items:
   #   name: 'Training'
   #   route: '/services/training'
   -
-    name: 'Research'
-    route: '/research'
-  -
     name: 'Services'
     route: '/services'
+  -
+    name: 'Research'
+    route: '/research'
   -
     name: 'About'
     route: '/about'

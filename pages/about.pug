@@ -3,12 +3,12 @@ extends /templates/layouts/default.pug
 block content
   header.flex.justify-center.flex-auto
     .container
-      h1 About 
+      h1.mb2 About
 
   article.lh-copy
-    figure.ml0.mt0.mb0.mr3.pt1.fl
-      img.h5.br1(src="/images/jonathandupre.jpg")
-    p 
+    figure.ml0.mt0.mb0.mr3.pt1.fl.pv0
+      img.h5.br1.pv1(src="/images/jonathandupre.jpg")
+    p.mv0 
       | My name is Jonathan Dupré. I'm a security advisor with an expertise in application and cloud security. I help tech executives build software with security in mind.
     
     p
@@ -17,13 +17,13 @@ block content
     p 
       | As an independent advisor, I don't sell security products, equipment, or implementation. This allows me to give you advice that is always neutral and aligned with your best interests.
 
-    div.tc
-      img.w4.mh2(src="/images/cissp.png" style="filter: grayscale(100%);")
-      img.w4.mh2(src="/images/aws.png" style="filter: grayscale(100%);")
-
     p
       | I am a Certified Information Systems Security Professional (CISSP), which means I committed to fully support the (ISC)² Code Of Ethics. I also hold the AWS Certified Security - Specialty
       | certification since 2019. 
+
+    div.mv4.tc.tl-ns
+      img.w3.mr4(src="/images/cissp.png" style="filter: grayscale(100%);")
+      img.w3.mr4(src="/images/aws.png" style="filter: grayscale(100%);")
 
 
     h2 Recent clients
@@ -49,41 +49,3 @@ block content
         | with a successful exit
       li An established Canadian cybersecurity company
       li A global (23 countries) education network
-
-
-    h2 Testimonials
-
-    blockquote.mt0
-      p 
-        | Jonathan is brilliant in a particular way I notice: He can take
-        | complex knowledge and break it down into 
-        span.b simple, understandable language
-        |. He simplifies complexity and complexifies simplicity,
-        | wherever the natural direction is for knowledge to become more
-        | 'known', alive, shared. 
-        span.b He listens
-        |  with this skill as well, which 
-        | makes him able to focus and expand people simultaneously. 
-        | It's a beautiful gift.
-
-    blockquote 
-      p 
-        |Anybody can claim to be 
-        span.b solution oriented, resourceful or creative
-        | . 
-        | However, it doesn't mean much if you don't "get it" first. Getting
-        | it means having 
-        span.b the curiosity to understand the industry
-        |, the clients, the technology, the risks, the deadlines, etc. This is a
-        | necessity before channeling your thoughts and actions toward a
-        | greater outcome.
-      p 
-        | Already in our first meetings, you can see the gears spinning in his
-        | mind. That's how you know someone is invested, that they are thinking
-        | instead of spitting out the latest buzzwords. It is such a relief to
-        | work with the kind of person you can rely on
-        |. This is the very basis of 
-        span.b building a trust relationship.
-      p To put it in simple words, well, Jonathan, he "gets it".
-
-    include /templates/components/cta-schedule-a-call
