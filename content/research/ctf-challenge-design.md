@@ -1,11 +1,13 @@
 ---
-title: CTF Challenge Design
+title: Awesome CTF Challenge Design
 date: 2019-11-19
 ---
 
+Mirror of https://github.com/kareniel/awesome-ctf-challenge-design#readme
+
 A curated list of resources about security CTF and wargame challenge design.
 
-## Table of contents
+## Contents
 
 - [General](#general)
 - [Approaches & Specific Designs](#approaches--specific-designs)
