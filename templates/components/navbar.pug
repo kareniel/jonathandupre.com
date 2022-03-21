@@ -1,8 +1,9 @@
 nav.flex.justify-center.pt2.ph2
-  .container.flex.flex-row.justify-between.items-start.w-100
-    a.link.black.f7.mv2(href="/")
-      span.dib.dn-m Jonathan&nbsp;
-      span Dupré
+  .container.flex.flex-column.flex-row-ns.justify-between.items-start.w-100
+    .w-100.tc.tl-ns.pv1
+      a.link.black.f7.mv2(href="/")
+        span.dib.dn-m Jonathan&nbsp;
+        span Dupré
 
     //- Desktop
     ul.pl0.menu.list.items-center.justify-end.mv2.mh1.mr2.dn.flex-ns
@@ -12,8 +13,8 @@ nav.flex.justify-center.pt2.ph2
             | #{ item.name }
 
     //- Mobile
-    ul.pl0.list.flex.flex-column.lh-copy.items-end.w-50.mv2.dn-ns
+    ol.flex.flex-column.lh-copy.w-50.mt2.mb0.dn-ns.pv1
       each item in navbar.items
-        li.f7
+        li.f7.mb2
           a.link(href=item.route) 
             | #{ item.name }
