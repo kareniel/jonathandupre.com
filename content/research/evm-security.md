@@ -5,7 +5,7 @@ date: 2021-11-05
 
 Mirror of https://github.com/kareniel/awesome-evm-security#readme
 
-An overview of the EVM ecosystem from an infosec management perspective.
+An overview of the EVM ecosystem from an information security management perspective.
 
 ## Contents
 
