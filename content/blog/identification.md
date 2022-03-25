@@ -6,11 +6,11 @@ description:
 
 You misplace your expensive watch at the store and only find out the next day. So you go back to the store and ask customer service if they found it.
 
-The temptation is to celebrate and give the thing back.
+The temptation is to celebrate and give the thing back. It feels good to give something back to their rightful owner. 
 
-But if they do have the watch, the clerk faces a decision. It feels good to give something back to their rightful owner. 
+But if they do have the watch, the clerk faces a decision. They need to make sure that that's who you are. 
 
-So they need to make sure that that's who you are. They need to identify you.
+They need to identify you.
 
 The watch has qualities, like color, size, or branding. They found it at a specific place, at a specific time. 
 
