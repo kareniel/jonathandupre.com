@@ -18,7 +18,7 @@ If you are who you say you are, you should know about certain things. You hold i
 
 They hold a copy of the same information. But their copy is secret.
 
-To succeed, they need to ask you the right questions. And they have to do it while not revealing their secret information.
+To succeed, they need to ask you the right questions. And they have to do it while not [revealing their secret](see-equals-equals-download) information.
 
 You're good at inference. One small detail can give a secret away.
 
