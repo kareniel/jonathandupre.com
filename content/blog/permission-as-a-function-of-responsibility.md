@@ -1,5 +1,5 @@
 ---
-title: Permission as a function of responsibilities
+title: Permission as a function of responsibility
 date: 2022-03-25
 description: The more you systematize access management, the less you have to spend on access control operations. 
 ---
