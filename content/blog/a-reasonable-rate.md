@@ -1,10 +1,10 @@
 ---
-title: Vulnerability multiplication
+title: A reasonable rate
 date: 2022-03-29
 description: Your job is not to not make mistakes. It's to fix your mistakes at a reasonable rate.
 ---
 
-Vulnerabilities accumulate. 
+Vulnerabilities accumulate.
 
 Their volume over time correlates with a probability of being exploited. 
 
