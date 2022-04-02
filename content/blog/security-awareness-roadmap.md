@@ -12,9 +12,9 @@ You can integrate basic training into the onboarding process, and provide advanc
 
 Include in your basic training:
 
-1. Understanding our acceptable use policy.
+1. Understanding your acceptable use policy.
 2. Creating and storing passwords.
-3. Evaluating the sensitivity of information using our classification levels.
+3. Evaluating the sensitivity of information.
 4. Sending secret messages using a secure channel.
 5. Reporting security incidents.
 
