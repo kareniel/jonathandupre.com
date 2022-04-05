@@ -20,4 +20,4 @@ We are [custodians](things-customers-ask-for) of each other's private informatio
 
 And information spreads like ink in water.
 
-If you can assure me, maybe I can trust you.
+If you can assure me, maybe I can [trust](bringing-information-systems-under-management) you.
