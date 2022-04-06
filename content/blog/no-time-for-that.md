@@ -6,7 +6,7 @@ description: If you're always firefighting, you won't get better at security by 
 
 The best way to invest a small budget is to implement best practices. 
 
-But a better long-term ROI requires a bigger budget. It involves aligning security with your organisation's strategic direction.
+But a better long-term ROI requires a bigger budget and a longer timeframe. It involves aligning security with your organisation's strategic direction.
 
 That means operating security from the perspective of a business enabler.
 
