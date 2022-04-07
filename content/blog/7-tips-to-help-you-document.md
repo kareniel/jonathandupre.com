@@ -17,7 +17,7 @@ Choose a single location for your documentation and commit to it. Make it easy t
 
 ### Create some kind of index
 
-Create a central document that links out to everything else. Make sure to keep it up to date at all times. Your index is the treasure map to your documentation pile. You will use it to make sense of your mess.  
+Create a central document that links out to everything else. Make sure to keep it up to date at all times. Your index is your treasure map. You will use it to make sense of your mess.
 
 ### Look at the stats
 
