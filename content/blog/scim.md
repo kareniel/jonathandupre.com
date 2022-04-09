@@ -1,7 +1,7 @@
 ---
 title: SCIM
 date: 2022-04-09
-description: ""Make it fast, cheap, and easy to move users in to, out of, and around the cloud""
+description: SCIM is an application-level provisioning protocol. You can use it to provision users automatically.
 ---
 
 The "System for Cross-domain Identity Management", or SCIM, is an application-level provisioning protocol.
