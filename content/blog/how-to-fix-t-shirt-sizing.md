@@ -4,7 +4,7 @@ date: 2022-04-14
 description: Without a clear definition, you can't multiply "Small" and "Medium" and expect a meaningful result.
 ---
 
-T-shirt sizing is the practice where you estimate the effort it will take to complete a task.
+T-shirt sizing is the practice where you estimate the effort it will take to complete a task using t-shirt sizes.
 
 It leads people to say things like "That's 2 large, 3 mediums, and 4 smalls" and pretend it's meaningful.
 
