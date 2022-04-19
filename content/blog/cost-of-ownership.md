@@ -1,6 +1,6 @@
 ---
 title: Cost of ownership
-date: 2022-04-19
+date: 2022-04-18
 description: If you account for the cost of ownership, you might be better off doing it by hand.
 ---
 

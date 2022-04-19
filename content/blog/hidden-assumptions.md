@@ -1,6 +1,6 @@
 ---
 title: Hidden assumptions
-date: 2022-04-16
+date: 2022-04-15
 description: The more you describe your systems, the more you uncover hidden assumptions.
 ---
 
