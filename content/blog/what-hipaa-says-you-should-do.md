@@ -1,10 +1,10 @@
 ---
 title: What HIPAA says you should do
 date: 2022-14-19
-description: You are responsible to ensure the confidentiality, integrity, and availability of all PHI you or your clients create, receive, maintain, or transmit.
+description: You are responsible to ensure the confidentiality, integrity, and availability of all private health information (PHI) you create, receive, maintain, or transmit.
 ---
 
-You are responsible to ensure the confidentiality, integrity, and availability of all PHI you or your clients create, receive, maintain, or transmit.
+You are responsible to ensure the confidentiality, integrity, and availability of all private health information (PHI) you create, receive, maintain, or transmit.
 
 You must:
 
