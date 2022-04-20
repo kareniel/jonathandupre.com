@@ -21,6 +21,6 @@ That means you need to:
 6. Put a plan in place to reduce the likelihood until it's low 
 7. Make a reasonable amount of effort to implement the plan 
 
-When evaluating vendors, ask them to tell you how they evaluate and control risk. Never do business with a vendor who's standard is lower than what your clients expect from you.
+When evaluating vendors, ask them to tell you how they assess and control risk. Never do business with a vendor who's standard is lower than what your clients expect from you.
 
 If you follow this process, audits will be easy, and you won't spend more money than necessary. 
