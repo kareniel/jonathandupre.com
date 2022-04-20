@@ -1,6 +1,6 @@
 ---
 title: What HIPAA says you should do
-date: 2022-14-19
+date: 2022-04-19
 description: You are responsible to ensure the confidentiality, integrity, and availability of all private health information (PHI) you create, receive, maintain, or transmit.
 ---
 
