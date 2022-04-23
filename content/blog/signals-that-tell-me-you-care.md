@@ -1,5 +1,5 @@
 ---
-title: Signals that tell me you care
+title: Show me you care
 date: 2022-04-22
 description: Find ways to demonstrate that you won't ruin my day.
 ---
