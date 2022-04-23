@@ -16,6 +16,6 @@ Some signals that tell me your company take security seriously:
 
 **You publish content that helps your clients protect their information when using your software**. No solution is perfect. When you educate your clients on how to use your product safely, you tell me that you probably considered how it could be misused.
 
-**You made it easy for me to back up my data**. I don't have to jump through hoops to make sure I have more than 1 copy of anything important. I can export to standard file formats without thinking to hard about it.
+**You made it easy for me to back up my data**. I don't have to jump through hoops to make sure I have more than 1 copy of anything important. I can export to standard file formats without thinking too hard about it.
 
 The strongest signals show me that you have given this some thought. Find ways to demonstrate that you won't ruin my day.
