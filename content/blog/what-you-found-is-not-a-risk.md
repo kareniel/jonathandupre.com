@@ -8,7 +8,7 @@ You don't discover risks when doing security reviews. You discover issues about 
 
 A risk is an uncertain future event with meaningful consequences. 
 
-You describe risks through scenarios that might happen in the future: 
+You describe security risks through scenarios that might happen in the future: 
 
 > "During `<a time period>`, `<a threat>` abuses `<a set of vulnerabilities>` in `<a set of systems>` reducing the probability of reaching a `<business goal>` by `<a ratio>`".
 
