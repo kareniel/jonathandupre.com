@@ -4,7 +4,7 @@ date: 2022-04-26
 description: Until you provide every component of the risk scenario, you won't know if the impact is meaningful.
 ---
 
-You don't discover risks when doing security reviews. You discover issues about some of your assets. You find out in what ways they are vulnerable.
+You don't discover risks when doing security reviews. You discover issues about some of your security controls. You find out in what ways they are vulnerable.
 
 A risk is an uncertain future event with meaningful consequences. 
 
