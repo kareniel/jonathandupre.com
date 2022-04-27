@@ -10,7 +10,7 @@ A risk is an uncertain future event with meaningful consequences.
 
 You describe security risks through scenarios that might happen in the future: 
 
-> "During `<a time period>`, `<a threat>` abuses `<a set of vulnerabilities>` in `<a set of systems>` reducing the probability of reaching a `<business goal>` by `<a ratio>`".
+> "During `<a time period>`, `<a threat>` abuses `<a set of vulnerabilities>` in the security controls of `<a set of systems>` reducing the probability of reaching a `<business goal>` by `<a ratio>`".
 
 1. Adjust `<time periods>` to the event horizon you are looking at.
 2. Conduct inventory management and architecture reviews to get a list of your `<systems>`.
