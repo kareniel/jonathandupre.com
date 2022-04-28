@@ -5,9 +5,9 @@ items:
   # -
   #   name: 'Training'
   #   route: '/services/training'
-  -
-    name: 'Services'
-    route: '/services'
+  # -
+  #   name: 'Services'
+  #   route: '/services'
   -
     name: 'Research'
     route: '/research'
