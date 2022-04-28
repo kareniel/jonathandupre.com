@@ -4,7 +4,7 @@ date: 2022-04-27
 description: You can reduce the scope of the audit by reducing the amount of sensitive information you process.
 ---
 
-Sometimes to sign big clients you will need to get SOC 2 certified.
+Sometimes to sign big clients you need to get SOC 2 certified.
 
 You will be storing their data in the cloud, so they want to know that your security practices meet a recognized standard.
 
