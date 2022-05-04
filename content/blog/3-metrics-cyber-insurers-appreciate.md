@@ -1,6 +1,6 @@
 ---
 title: 3 metrics cyber insurers appreciate
-date: 2022-05-04
+date: 2022-05-03
 description: The requirements for cyber insurance have been getting harder and harder, even for businesses with a small footprint.
 ---
 
