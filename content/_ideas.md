@@ -9,6 +9,22 @@
 ~the clear documentation of critical business contracts~
 ~dont let security slow you down~
 
+
+- How to get enterprise clients to work with you as an early stage startup
+- How to fly through procurement
+- How to leverage security in sales calls
+- How to bake security in
+- How to design a secure product
+- How to choose which security feature to implement first
+- How to implement a given security feature
+- How to create a security roadmap
+- How to avoid wasting time with compliance projects
+- How to align security with business goals
+- How to assess information risk
+- How to know that you’ve done enough
+- How to design a security page
+- How to save time when completing vendor questionnaires
+
 control of the volume of work-in-progress
 
 the systematic reduction of your attack surface
