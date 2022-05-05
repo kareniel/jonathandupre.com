@@ -4,7 +4,7 @@ date: 2022-05-04
 description: The protection of ownership comes with a secret to protect.
 ---
 
-How do you protect a secret? You put it in a vault. How do you get access the vault? You use the key. How do you protect the key? Well, you could put it in another vault, but you will end up with the same problem. Where do you protect the key to that vault?
+How do you protect a secret? You put it in a vault. How do you get access the vault? You use the key. How do you protect the key? Well, you could put it in another vault, but you will end up with the same problem. How do you protect the key to that vault?
 
 The protection of ownership comes with another secret to protect.
 
