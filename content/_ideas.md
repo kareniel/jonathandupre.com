@@ -112,3 +112,17 @@ Tokens and DAOs will be used to power autonomous IT infrastructure
 writing down decisions, ideas, or plans creates accountability
 allow people to review and reflect on what was said at a later time, without the biases of memory
 
+it is costing me x$ to not know how to avoid losing x$
+my ignorance is costing me so much money
+
+It's costing you money to not know how you spend it.
+
+does your team have the right skillset
+
+information theoretic security vs information assurance
+
+provably secure cloud IT on a shoestring
+
+your email/social inboxes are a queue services
+
+
