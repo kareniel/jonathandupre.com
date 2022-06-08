@@ -9,7 +9,7 @@
 ~the clear documentation of critical business contracts~
 ~dont let security slow you down~
 
-
+- SLA for your habits
 - How to get enterprise clients to work with you as an early stage startup
 - How to fly through procurement
 - How to leverage security in sales calls
