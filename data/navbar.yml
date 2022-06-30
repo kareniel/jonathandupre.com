@@ -5,15 +5,15 @@ items:
   # -
   #   name: 'Training'
   #   route: '/services/training'
-  -
-    name: 'Services'
-    route: '/services'
-  -
-    name: 'Research'
-    route: '/research'
+  # -
+  #   name: 'Services'
+  #   route: '/services'
   -
     name: 'About'
     route: '/about'
+  -
+    name: 'Research'
+    route: '/research'
   -
     name: 'Contact'
     route: '/contact'
