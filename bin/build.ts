@@ -49,13 +49,13 @@ function build() {
 
   const feed = new Feed({
     title: 'Jonathan Dupré',
-    description: 'Web Security Advisor and Educator.',
+    description: 'Cybersecurity expert.',
     id: 'https://jonathandupre.com/',
     link: 'https://jonathandupre.com/',
     language: 'en',
     // image: "https://jonathandupre.com/images/logo/logomark-dark-572.png",
     favicon: 'https://jonathandupre.com/favicon.ico',
-    copyright: '© 2012-2022, Jonathan Dupré.',
+    copyright: '© 2012-2024, Jonathan Dupré.',
     generator: 'None',
     feedLinks: {
       atom: 'https://jonathandupre.com/atom',
