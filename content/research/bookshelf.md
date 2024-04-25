@@ -16,7 +16,7 @@ These are books that are currently in my bookshelf and that I would recommend.
 
 - [Thinking in bets](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216371) - Annie Duke
 - [The score takes care of itself](https://www.amazon.com/Score-Takes-Care-Itself-Philosophy/dp/1591843472) - Bill Walsh
-- [So good they can’t ignore you](https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124) - Cal Newport
+- [So good they can't ignore you](https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124) - Cal Newport
 - [The business of expertise](https://www.amazon.com/Business-Expertise-Entrepreneurial-Experts-Convert/dp/1605440604) - David C. Baker
 - [Managing the professional service firm](https://www.amazon.com/Managing-Professional-Service-David-Maister/dp/0684834316) - David H. Maister
 

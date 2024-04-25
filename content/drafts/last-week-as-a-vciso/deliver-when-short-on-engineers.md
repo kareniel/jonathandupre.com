@@ -1,6 +1,8 @@
-https://docs.google.com/document/d/1pOiDIo-3unhCq6DzOk68UlekvgbmMeBFRTIWqpyI6eo/edit#
-
-# How to deliver on a roadmap when you are short on security engineers
+---
+title: How to deliver when you are short on security engineers
+date: 2024-04-24
+description: How can I put a system in place so that this category of problems doesn't come up again in the future?
+---
 
 ## Security's first home inside devops
 
@@ -54,20 +56,10 @@ Start with immutable infrastructure. Once it becomes standard practice avoid tou
 
 ## Adaptive roadmaps embrace unplanned work
 
-Security roadmap needs to be adaptive. Design your roadmap in terms of process.
+Security roadmaps need to be adaptive. Design your roadmap in terms of process.
 
 How do we set ourselves up for success? We take a step back from the doing and we start organizing the way we work.
 
 The business process is responsible for getting the results. Whoever runs the playbook is responsible for following the steps correctly. Once the process has been reviewed, you start getting some assurance about the future state. This can then be delegated to a more junior position or maybe even automated.
 
 Instead of thinking "How can I fix this problem?", start considering "How can I put a system in place so that this category of problems doesn't come up again in the future?".
-
-
-
-
-<!-- By thinking in process, you make it possible for a wider variety of people to come work with you  -->
-
----
-
-
-<!-- we open the door to hiring into devops and security without expecting them to wear 30 hats -->
