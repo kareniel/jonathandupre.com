@@ -20,6 +20,3 @@ You develop capabilities so you know how to adapt in the face of change.
 You see the bad thing coming. You react at the right time. You recover without breaking a sweat.
 
 Track the maturity of your patching skills, not the number of bugs in your dependencies. 
-
-
-<!-- Who  wants to go around enumerating their weaknesses? -->

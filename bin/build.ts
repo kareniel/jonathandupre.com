@@ -11,11 +11,11 @@ import stylus from 'stylus';
 import { Feed } from 'feed';
 import * as dotenv from 'dotenv';
 import { exit } from 'process';
-import SiteData from './data'
+import SITE_DATA from './data'
 
 dotenv.config();
 
-const DirectoryMap = generateDirectoryMap(['dist', 'pages', 'style', 'static']);
+const DirectoryMap = generateDirectoryMap(['dist', 'pages', 'style', 'static', 'xor']);
 const Months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 export default build;
@@ -31,17 +31,42 @@ function build() {
   const feed = createRSSFeed()
   const renderer = new marked.Renderer();
   const pages = listFilesRecursive(DirectoryMap.pages)
+  const siteData = Object.assign({}, SITE_DATA)
 
   recreateDist();
   copyAssets();
   buildCSS();
-  generateDynamicPages(pages, renderer, feed)
-  generateStaticPages(pages)
+  generateDynamicPages(pages, siteData, renderer, feed)
+  generateStaticPages(pages, siteData)
 
   fs.writeFileSync('dist/rss', feed.rss2());
   fs.writeFileSync('dist/atom', feed.atom1());
 
   console.log('Done.');
+}
+
+function createRSSFeed() {
+  const feed = new Feed({
+    title: 'Jonathan Dupré',
+    description: 'Cybersecurity expert.',
+    id: 'https://jonathandupre.com/',
+    link: 'https://jonathandupre.com/',
+    language: 'en',
+    // image: "https://jonathandupre.com/images/logo/logomark-dark-572.png",
+    favicon: 'https://jonathandupre.com/favicon.ico',
+    copyright: '© 2012-2024, Jonathan Dupré.',
+    generator: 'None',
+    feedLinks: {
+      atom: 'https://jonathandupre.com/atom',
+      rss: 'https://jonathandupre.com/rss',
+    },
+    author: {
+      name: 'Jonathan Dupré',
+      link: 'https://jonathandupre.com',
+    },
+  });
+
+  return feed;
 }
 
 function compilePug(filename, file, locals) {
@@ -54,7 +79,7 @@ function compilePug(filename, file, locals) {
 
 function generatePage(src: string, dest?: string, locals = {}) {
   const file = fs.readFileSync(src, 'utf8');
-  const html = compilePug(src, file, Object.assign({}, locals, SiteData));
+  const html = compilePug(src, file, locals);
 
   if (!dest) {
     dest = getDestination(src);
@@ -68,10 +93,10 @@ function pageIsDynamic(filename: string) {
   return path.basename(filename, '.pug')[0] === '_'
 }
 
-function generateStaticPages(filenames: string[]) {
+function generateStaticPages(filenames: string[], siteData: Record<string, any>) {
   filenames
     .filter(filename => !pageIsDynamic(filename))
-    .forEach((page) => generatePage(page));
+    .forEach((page) => generatePage(page, "", siteData));
 }
 
 
@@ -83,28 +108,31 @@ function generateImageRenderingFn(renderer) {
   };
 }
 
-function generateRoute(route, renderer, feed: Feed) {
-  const dirName = path.dirname(route).split('/').slice(-1)[0];
+function generateRoute(route, siteData: Record<string, any>, renderer, feed: Feed, ) {
+  const fullPath = path.dirname(route)
+  const parentDirName = "pages"
+  const dirName = fullPath.slice(fullPath.indexOf(parentDirName) + parentDirName.length + 1);
   const contentDir = path.join(__dirname, '..', 'content', dirName);
   const filenames = fs.readdirSync(contentDir);
   const filepaths = filenames.map((filename) => path.join(contentDir, filename));
 
-  if (!SiteData.routes[dirName]) {
-    SiteData.routes[dirName] = [];
+  if (!siteData.routes[dirName]) {
+    siteData.routes[dirName] = [];
   }
 
-  const folder = SiteData.routes[dirName];
+  const folder = siteData.routes[dirName];
 
   filepaths.forEach((filepath) => {
     const str = fs.readFileSync(filepath, 'utf8');
     const dest = getDestination(filepath);
     const frontmatter = matter(str);
     const pageData = frontmatter.data;
+    const slug = path.basename(filepath, path.extname(filepath))
 
     const item = {
-      slug: path.basename(filepath, path.extname(filepath)),
+      slug: slug,
       title: pageData.title,
-      date: formatDate(pageData.date),
+      date: formatDate(pageData.date)
     };
 
     folder.push(item);
@@ -118,18 +146,29 @@ function generateRoute(route, renderer, feed: Feed) {
         ...item,
         content,
         date: new Date(item.date),
-        link: `https://jonathandupre.com/blog/${item.slug}`,
+        link: `https://jonathandupre.com/blog/${slug}`,
       });
     }
 
-    generatePage(route, dest, { post: { data: pageData, content } });
+    const locals = Object.assign({}, siteData, { 
+      post: { 
+        data: Object.assign({}, pageData, { 
+          year: new Date(item.date).getFullYear(),
+          url_path: path.join(dirName, slug),
+          slug
+        }),
+        content 
+      }
+    })
+
+    generatePage(route, dest, locals);
   });
 }
 
-function generateDynamicPages(filenames: string[], renderer, feed) {
+function generateDynamicPages(filenames: string[], siteData: Record<string, any>, renderer, feed: Feed) {
   filenames
     .filter(pageIsDynamic)
-    .forEach(route => generateRoute(route, renderer, feed));
+    .forEach(route => generateRoute(route, siteData, renderer, feed));
 }
 
 function getDestination(src) {
@@ -142,13 +181,6 @@ function getDestination(src) {
   const dest = path.join(dir, filename);
 
   return dest;
-}
-
-function getPageKey(filename) {
-  const ext = path.extname(filename);
-  const basename = path.basename(filename, ext);
-
-  return changeCase.camel(basename);
 }
 
 function listFilesRecursive(dir: string): Array<string> {
@@ -168,24 +200,6 @@ function listFilesRecursive(dir: string): Array<string> {
 function flatten(array): Array<string> {
   return [].concat(...array);
 }
-
-// function loadData(): Record<string, any> {
-//   const dataDir = path.join(__dirname, '../data');
-
-//   const filenames = fs.readdirSync(dataDir);
-//   const data = {
-//     routes: {}
-//   };
-
-//   filenames.forEach((filename) => {
-//     const name = getPageKey(filename);
-//     const file = fs.readFileSync(path.join(dataDir, filename), 'utf8');
-
-//     data[name] = yaml.parse(file);
-//   });
-
-//   return data;
-// }
 
 function recreateDist() {
   rimraf.sync(DirectoryMap.dist);
@@ -221,28 +235,4 @@ function generateDirectoryMap(directories): Record<string, string> {
   });
 
   return dir;
-}
-
-function createRSSFeed() {
-  const feed = new Feed({
-    title: 'Jonathan Dupré',
-    description: 'Cybersecurity expert.',
-    id: 'https://jonathandupre.com/',
-    link: 'https://jonathandupre.com/',
-    language: 'en',
-    // image: "https://jonathandupre.com/images/logo/logomark-dark-572.png",
-    favicon: 'https://jonathandupre.com/favicon.ico',
-    copyright: '© 2012-2024, Jonathan Dupré.',
-    generator: 'None',
-    feedLinks: {
-      atom: 'https://jonathandupre.com/atom',
-      rss: 'https://jonathandupre.com/rss',
-    },
-    author: {
-      name: 'Jonathan Dupré',
-      link: 'https://jonathandupre.com',
-    },
-  });
-
-  return feed;
 }

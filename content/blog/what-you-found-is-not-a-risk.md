@@ -24,5 +24,3 @@ Until you provide every component of the risk scenario, you won't know if the im
 Use forecasting to estimate the impact on the bottom-line, and focus on protecting business goals. 
 
 Measuring risk will help you prioritize potential remediations with the other important things that your budget can buy.
-
-<!-- Clients churning, spending money you didn't budget for, wasting the time of executives, paying hefty fines, or being forced to fire an otherwise productive engineer as a disciplinary action. -->

@@ -21,7 +21,3 @@ They hold a copy of the same information. But their copy is secret.
 To succeed, they need to ask you the right questions. And they have to do it while not [revealing their secret](see-equals-equals-download) information.
 
 You're good at inference. One small detail can give a secret away.
-
-<!-- They can ask you to describe the watch, or the circumstances of the loss. -->
-<!-- They could have than one lost watch.  -->
-<!-- The clerk in this example has to do this without revealing anything. -->

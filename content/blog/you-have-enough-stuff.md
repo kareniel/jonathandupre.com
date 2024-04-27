@@ -17,14 +17,3 @@ You pay to store data you will never use. Then you hire a vendor to sell you som
 You have the ability to herd fleets of compute nodes and wrangle data streams across networks. 
 
 You don't need more stuff. 
-
-<!-- 
-
-You have enough servers.
-
-There's this dark corner in your cloud drive where files are piling up.
-
-that contains more insights about 
-give you a ridiculous advantage.
- -->
-

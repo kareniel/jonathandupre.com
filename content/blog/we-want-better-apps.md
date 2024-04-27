@@ -16,6 +16,3 @@ So there's an inherent risk to better apps.
 - Sometimes you can plan ahead and invest in an action plan.
 
 We want better apps, which means we should expect [some level of risk](the-price-of-inaction). 
-
-<!-- 
-You're free to choose your own adventure, but make sure that everyone understands the game. -->
