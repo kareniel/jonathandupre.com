@@ -4,7 +4,6 @@ import path from 'path';
 import mkdirp from 'mkdirp';
 import pug from 'pug';
 import rimraf from 'rimraf';
-import changeCase from 'change-case';
 import matter from 'gray-matter';
 import * as marked from 'marked';
 import stylus from 'stylus';

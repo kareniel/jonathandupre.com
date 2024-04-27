@@ -12,7 +12,7 @@ const b = budo('./src/index.js', {
   live: true,
   port: PORT,
   dir: path.join(__dirname, '../dist'),
-  watchGlob: ['!dist/**', '**/*.{md,pug,styl,yml,png}'],
+  watchGlob: ['!dist/**', '**/*.{md,pug,styl,yml,png,js}'],
   staticOptions: {
     extensions: ['html'],
   },

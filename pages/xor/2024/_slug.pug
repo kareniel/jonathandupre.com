@@ -2,11 +2,13 @@ extends /templates/layouts/default.pug
 
 block content
   article.lh-copy
-    small
     h1 Wizards of XOR
     h2 Challenge ##{ post.data.slug }
     | !{ post.content }
+
+    hr
     
-    a(href="/xor") ‹ Back to the index
+    small
+      a(href="/xor") ‹ Back to the index
 
     script(src=`/js/${post.data.url_path}.js`)
