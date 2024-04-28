@@ -4,9 +4,8 @@ date: 2024-04-27
 description: Symmetric encryption algorithm
 ---
 
-The snake cipher encrypts Tobaud encoded text.
-
-Snake keys are 25-bit numbers.
+The snake cipher is a symmetric key algorithm made to be used with the [Tobaud Code](/xor/library/tobaud-code).
+Snake encryption keys are 25-bit natural numbers.
 
 ### Encryption
 
@@ -17,45 +16,30 @@ Snake keys are 25-bit numbers.
 
 Example:
 ```
-The "5ue2e" key encrypts "hello world" into "vpipj5bjmiz"
-
-"hello world" is:
-01000 00101 01100 01100 01111 00000 10111 01111 10001 01100 00100
-
-"5ue2e" is: 
-11110 10101 00101 11100 00101
-
-Hence:
-01000 ^ 11110 = 10110
-00101 ^ 10101 = 10000
-01100 ^ 00101 = 01001
-01100 ^ 11100 = 10000
-01111 ^ 00101 = 01010
-00000 ^ 11110 = 11110
-10111 ^ 10101 = 00010
-01111 ^ 00101 = 01010
-10001 ^ 11100 = 01101
-01100 ^ 00101 = 01001
-00100 ^ 11110 = 11010 ​
-
-"vpipj5bjmiz" is 10110 10000 01001 10000 01010 11110 00010 01010 01101 01001 11010
-
+The "snake" key encrypts "hello world" into "0kmgjsynyiw"
 ```
-
 
 ### Key generation
 
-The key generator is a 5-bit maximal-period Galois LFSR.
-
-1. Set each bit according to a seed value
-2. Shift right every untapped bit (Move 0 into 1, 1 into 2, 2 into 3, and 3 into 4)
-3. `XOR` the tapped bits (4 and 1 into 0)
-4. Repeat this 5 times
+The snake key generator is a 5-bit Galois Linear-feedback shift register (LFSR).
 
 ``` 
 0  1  2  3  4
 ☐→☐ →☐→☐ →☐ 
 ↑  ↓        │
 └──⊕───────┘
-
 ```
+
+Here is how it works:
+1. Pick a 5-bit seed value
+2. Set each bit according to the seed value you picked
+3. Set aside the value of bits 1 and 4
+4. Apply a bitwise right shift to every untapped bit (Move 0 into 1, 1 into 2, 2 into 3, and 3 into 4)
+5. `XOR` bits 1 and 4 and set the result as the value for bit 0
+6. Save the result as the first part of the key 
+7. Reuse the first part as the next seed
+8. Repeat this 4 times more times
+9. Use the last past as the seed for the next run
+10. Log the name of the user after each run for audit purposes
+
+The default seed value is the decimal `0`.

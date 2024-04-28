@@ -4,9 +4,10 @@ date: 2024-04-26
 description: 
 ---
 
-Every time the generator runs, we note the name of the person who requested a key.
+> Every time the generator runs, we wrote down the name of the person who requested a key.
 
-<table class="collapse ba br2 b--black-10 pv2 ph3">
+<br>
+<table class="tl collapse ba br2 b--black-10 pv2 ph3">
 <tbody>
   <tr class="striped--light-gray">
     <th class="pv2 ph3 tl f6 fw6 ttu">n</th>
@@ -32,4 +33,5 @@ Every time the generator runs, we note the name of the person who requested a ke
     <td class="pv2 ph3">4</td>
     <td class="pv2 ph3">Thomas</td>
   </tr>
-</tbody></table>
+</tbody>
+</table>
