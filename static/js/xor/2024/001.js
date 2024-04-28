@@ -31,7 +31,7 @@ function onClick() {
   if (isWin) {
     win(`You got it! Albert's secret phrase is "${decrypt(ciphertext, key)}"`)
   } else {
-    fail(`No, that's not it. The key decrypts to "${decrypt(ciphertext, key)}".`)
+    fail(`No, that's not the right key. With that key, the secret phrase would be "${decrypt(ciphertext, key)}".`)
   }
 }
 
