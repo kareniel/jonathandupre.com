@@ -42,4 +42,4 @@ Here is how it works:
 9. Use the last past as the seed for the next run
 10. Log the name of the user after each run for audit purposes
 
-The default seed value is the decimal `0`.
+The default seed value is `11011`.
