@@ -3,11 +3,13 @@ extends /templates/layouts/default.pug
 block content
   article.lh-copy
     h1 #{ post.data.title }
+
     | !{ post.content }
 
-    hr
-    
-    small
-      a(href="/xor") ‹ Back to the index
+    footer.mt4
+      hr
+      p
+        small
+          a(href="/xor") ‹ Back to the index
 
     script(src=`/js/${post.data.url_path}.js`)
