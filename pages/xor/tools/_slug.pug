@@ -1,0 +1,8 @@
+extends /templates/layouts/default.pug
+
+block content
+  article.lh-copy
+    h1 🪓 #{ post.data.title }
+    | !{ post.content }
+    
+    script(src=`/js/xor/components/${post.data.slug.replaceAll('-', '_')}.js` type="module")
