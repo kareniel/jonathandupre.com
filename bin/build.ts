@@ -10,11 +10,12 @@ import stylus from 'stylus';
 import { Feed } from 'feed';
 import * as dotenv from 'dotenv';
 import { exit } from 'process';
-import SITE_DATA from './data'
+import SITE_DATA from './data'  
+import { execSync } from 'child_process';
 
 dotenv.config();
 
-const DirectoryMap = generateDirectoryMap(['dist', 'pages', 'style', 'static', 'xor']);
+const DirectoryMap = generateDirectoryMap(['dist', 'pages', 'style', 'static', 'src']);
 const Months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 export default build;
@@ -22,6 +23,19 @@ export default build;
 if (require.main === module) {
   build();
   exit();
+}
+
+function buildTS () {
+  console.log('Building TS...')
+
+  try {
+    execSync(`tsc --module es6 --outDir ${path.join(__dirname, '..')}/dist/js/xor src/xor/**/*.ts`, { encoding: 'utf-8' })
+  } catch (failed) {
+    console.log((failed as any)?.stdout as string)
+    process.exit(1)
+  }
+
+  console.log('Done building TS.')
 }
 
 function build() {
@@ -40,6 +54,8 @@ function build() {
 
   fs.writeFileSync('dist/rss', feed.rss2());
   fs.writeFileSync('dist/atom', feed.atom1());
+
+  buildTS();
 
   console.log('Done.');
 }

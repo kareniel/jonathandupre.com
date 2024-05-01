@@ -78,7 +78,6 @@ function decrypt(ciphertext, key) {
 }
 
 function verifyAnswer(key) {
-  console.log('verify with key', key, encrypt(testPlainText, key), testCipherText)
   return encrypt(testPlainText, key) === testCipherText
 }
 

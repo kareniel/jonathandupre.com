@@ -12,7 +12,7 @@ const b = budo('./src/index.js', {
   live: true,
   port: PORT,
   dir: path.join(__dirname, '../dist'),
-  watchGlob: ['!dist/**', '**/*.{md,pug,styl,yml,png,js}'],
+  watchGlob: ['!dist/**', "!tmp/**", '!**/_fake.js', '**/*.{md,pug,styl,yml,png,js,ts}'],
   staticOptions: {
     extensions: ['html'],
   },
@@ -27,6 +27,7 @@ function runBuild() {
   try {
     build();
   } catch (err) {
+    console.log('Build error:')
     console.log(err);
   }
 }
