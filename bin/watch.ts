@@ -15,6 +15,7 @@ const b = budo('./src/index.js', {
   watchGlob: ['!dist/**', "!tmp/**", '!**/_fake.js', '**/*.{md,pug,styl,yml,png,js,ts}'],
   staticOptions: {
     extensions: ['html'],
+    pushstate: true
   },
 }).on('connect', () => {
   console.log(`Serving site at http://localhost:${PORT}`);
