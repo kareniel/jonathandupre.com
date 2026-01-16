@@ -1,13 +1,14 @@
 {
   "name": "@kareniel/www",
+  "type": "module",
   "version": "2022.02.11",
   "description": "My website.",
   "author": "Jonathan Dupré <hello@jonathandupre.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "npm run watch",
-    "watch": "ts-node bin/watch",
-    "build": "ts-node bin/build",
+    "watch": "tsx bin/watch",
+    "build": "tsx bin/build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix --ext .js,.ts"
   },
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/kareniel/www#readme",
   "devDependencies": {
-    "@types/node": "^17.0.21",
+    "@types/node": "^25.0.9",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "budo": "^11.6.4",
@@ -35,13 +36,15 @@
     "gray-matter": "^4.0.1",
     "marked": "^4.0.12",
     "mkdirp": "^0.5.1",
-    "pug": "^3.0.2",
+    "eta": "^3.4.0",
     "rimraf": "^2.6.3",
     "stylus": "^0.54.5",
     "tape": "^4.9.2",
     "trash": "^4.3.0",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "undici-types": "^7.18.2",
     "yaml": "^1.2.0"
   }
 }

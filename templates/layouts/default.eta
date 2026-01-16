@@ -1,0 +1,10 @@
+<% 
+const data = { ...it };
+data.body = function() { %>
+<%~ includeFile('/templates/components/navbar.eta', it) %>
+<%~ includeFile('/templates/components/content.eta', it) %>
+<%~ includeFile('/templates/components/footer.eta', it) %>
+<% };
+%>
+<%~ includeFile('/templates/layouts/layout.eta', data) %>
+

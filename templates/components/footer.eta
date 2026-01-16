@@ -1,0 +1,13 @@
+<footer class="flex justify-center mt4 pt3 pb4 pv4-ns black-70 ph2">
+  <div class="container flex flex-column">
+    <ul class="pl0 list flex justify-center f7 w-100">
+      <li class="mh2">
+        <a class="link" href="/atom" target="_new">RSS</a>
+      </li>
+    </ul>
+    <div class="f7 db flex flex-row justify-center">
+      <p>© 2012-2026 Jonathan Dupré</p>
+    </div>
+  </div>
+</footer>
+

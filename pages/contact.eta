@@ -1,0 +1,24 @@
+<% 
+const data = { ...it };
+data.content = function() { %>
+<header class="flex justify-center flex-auto">
+  <div class="container">
+    <h1>Let's talk</h1>
+  </div>
+</header>
+
+<article class="lh-copy">
+  <p class="mt0">I'm always happy to meet new people.</p>
+
+  <p>
+    You can
+    <a href="mailto:%68%65%6c%6c%6f%40%6a%6f%6e%61%74%68%61%6e%64%75%70%72%65%2e%63%6f%6d">
+      contact me by email
+    </a>, or
+    <a href="https://twitter.com/Jonathan_Dupre">DM me on Twitter</a>.
+  </p>
+</article>
+<% };
+%>
+<%~ includeFile('/templates/layouts/default.eta', data) %>
+

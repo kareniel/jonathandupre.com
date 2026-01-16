@@ -1,0 +1,13 @@
+<% 
+const data = { ...it };
+data.content = function() { %>
+<article class="lh-copy">
+  <h1><%= it.post && it.post.data ? it.post.data.title : '' %></h1>
+  <%~ it.post && it.post.content ? it.post.content : '' %>
+
+  <%~ includeFile('/templates/components/cta-subscribe.eta', it) %>
+</article>
+<% };
+%>
+<%~ includeFile('/templates/layouts/default.eta', data) %>
+

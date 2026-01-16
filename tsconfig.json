@@ -6,10 +6,10 @@
     "resolveJsonModule": true,
     "noEmit": false,
     "outDir": "build",
-    "target": "ESNext",
+    "target": "ES2022",
     "jsx": "preserve",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "lib": [
 			"es2020",
       "dom"
@@ -28,9 +28,7 @@
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization":false,
-    "typeRoots": [
-      "node_modules/@types"
-		]
+    "types": ["node"]
   },
 	"include": [
     "bin"

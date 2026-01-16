@@ -1,0 +1,30 @@
+<% 
+const data = { ...it };
+data.content = function() { %>
+<h1>Blog</h1>
+
+<h2>Most recent posts</h2>
+
+<div>
+  <table>
+    <tbody>
+      <% if (it.routes && it.routes.blog) { %>
+        <% const sortedBlog = [...it.routes.blog].sort((a, b) => new Date(b.date) - new Date(a.date)); %>
+        <% for (const post of sortedBlog) { %>
+          <tr class="lh-copy">
+            <td class="w4" style="vertical-align:top;"><%= post.date %>&nbsp;</td>
+            <td style="vertical-align:top;">
+              <a class="link" href="/blog/<%= post.slug %>">
+                <%= post.title %>
+              </a>
+            </td>
+          </tr>
+        <% } %>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+<% };
+%>
+<%~ includeFile('/templates/layouts/default.eta', data) %>
+

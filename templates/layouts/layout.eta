@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<%~ includeFile('/templates/components/head.eta', it) %>
+
+<body class="sans-serif flex flex-column">
+<%~ typeof it.body === 'function' ? it.body() : it.body %>
+</body>
+</html>
+

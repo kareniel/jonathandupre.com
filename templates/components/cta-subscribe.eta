@@ -1,0 +1,9 @@
+<section class="mt4 ba pa3 bw1 b--moon-gray f5 lh-copy">
+  <h1 class="f4 mt0">I hope you found this valuable</h1>
+  <p class="mt0">
+    Join other tinkerers deepening their understanding of computing through challenging puzzles and insightful exploration.
+  </p>
+
+  <%~ includeFile('/templates/components/email-form.eta', it) %>
+</section>
+

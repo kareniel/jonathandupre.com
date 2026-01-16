@@ -1,0 +1,29 @@
+<head>
+  <title>Jonathan Dupré</title>
+
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="author" property="og:author" content="Jonathan Dupré">
+  <meta name="description" property="og:description" content="<%= (it.post && it.post.data && it.post.data.description) ? it.post.data.description : 'Cybersecurity expert' %>">
+  <meta name="image" property="og:image" content="https://jonathandupre.com/images/unicorn-417-og.jpg">
+
+  <meta name="twitter:title" content="<%= (it.post && it.post.data && it.post.data.title) ? it.post.data.title : 'Jonathan Dupré' %>">
+  <meta name="twitter:description" content="<%= (it.post && it.post.data && it.post.data.description) ? it.post.data.description : 'Cybersecurity expert' %>">
+  <meta name="twitter:image" content="https://jonathandupre.com/images/unicorn-417-tw.jpg?1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Jonathan_Dupre">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/rss+xml" href="/rss">
+  <link rel="alternate" type="application/atom+xml" href="/atom">
+
+  <% if (process.env.NODE_ENV !== 'development') { %>
+  <script src="https://cdn.usefathom.com/script.js" data-site="ZNASAMJP" defer></script>
+  <% } %>
+  <script src="https://f.convertkit.com/ckjs/ck.5.js" defer></script>
+</head>
+

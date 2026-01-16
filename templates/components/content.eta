@@ -1,0 +1,6 @@
+<main class="flex justify-center flex-auto pv3 ph2">
+  <div class="container flex-auto">
+    <%~ typeof it.content === 'function' ? it.content() : it.content %>
+  </div>
+</main>
+
