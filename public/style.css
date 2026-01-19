@@ -1,0 +1,156 @@
+.bg-blue {
+  background-color: rgb(56, 109, 255);
+}
+
+.b--blue {
+  border-color: rgb(56, 109, 255);
+}
+
+html, body {
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body ::selection, .selected, a::selection {
+  background-color: rgba(0, 68, 255, 0.801);
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: georgia, times, serif;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+h2 ~ p {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 65ex;
+}
+
+.t1 {
+  font-size: 2vh;
+}
+
+article {
+  max-width: 72ex;
+}
+
+ol, ul {
+  padding-left: 1rem;
+}
+
+hr {
+  border-color: #ccc;
+  border-style: solid;
+}
+
+pre code {
+  font-size: 0.8rem;
+  background-color: #131313;
+  color: #ffffff;
+  border-radius: 3px;
+  display: inline-block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+}
+
+a, a:visited, a:active {
+  color: rgb(56, 109, 255);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a.white, a.white:visited, a.white:active {
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+footer a.link {
+  color: rgba(56, 109, 255, 1);
+}
+
+a:hover {
+  color: rgb(20, 68, 200);
+  transition: 0.3s;
+}
+
+a.white:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+button.bg-blue {
+  transition: 0.3s;
+}
+
+button.bg-blue:hover {
+  background-color: rgb(20, 68, 200);
+  border-color: rgb(20, 68, 200);
+  transition: 0.3s;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 3rem;
+  padding-top: 0.25rem;
+  position: relative;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 3rem;
+  padding-top: 0rem;
+  font-weight: bold;
+  position: absolute;
+  font-style: italic;
+  left: 0px;
+  top: 0px;
+}
+
+blockquote::after {
+  content: "";
+}
+
+input#navbar-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 30rem) {
+  input#navbar-toggle ~ .menu-mobile {
+    display: none;
+  }
+
+  input#navbar-toggle:checked ~ .menu-mobile {
+    display: block;
+  }
+
+  nav #navbar-button {
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  #navbar-toggle ~ nav #navbar-button:after {
+    content: '☰';
+  }
+
+  #navbar-toggle:checked ~ nav #navbar-button:after {
+    content: '✕';
+  }
+}
+
