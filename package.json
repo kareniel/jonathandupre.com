@@ -6,6 +6,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node bin/build.js",
+    "watch": "node bin/watch.js",
+    "serve": "node bin/serve.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

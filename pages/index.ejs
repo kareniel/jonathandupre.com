@@ -1,17 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-  <%- include('../includes/head.ejs', { title: 'Hello World' }) %>
-  <%- include('../includes/nav.ejs') %>
-  <body>
-    <main>
-      <h1>Devenir ce qu'on est appelé à être</h1>
-      <p>
-        J'écris à des hommes qui veulent une vie cohérente, sobre et exigeante. 
-        Vous recevrez un courriel de temps en temps. Pas de spam. Désinscription facile.
-        <a href="#">M'abonner</a>
-      </p>
-
-    </main>
-    <%- include('../includes/footer.ejs') %>
-  </body>
-</html>
+<%- include('../includes/page-top.ejs') %>
+<section class="mb5">
+  <article class="lh-copy">
+    <h1 class="f4 f4-ns">Devenir ce qu'on est appelé à être</h1>
+    <p class="mt0 f5">
+      J'écris pour des hommes qui veulent une vie cohérente, sobre et exigeante. 
+      Vous recevrez un courriel de temps en temps. Pas de spam. Désinscription facile.
+    </p>
+    <%- include('../includes/subscribe.ejs') %>
+  </article>
+</section>
+<section class="mb5">
+  <article class="lh-copy">
+    <h2>Salut.</h2>
+    <p>
+      Je m'appelle Jonathan Dupré. Je quitte tranquillement l'industrie du logiciel.
+    </p>
+    
+    <p>
+      Après plus de dix ans à concevoir, déployer, et sécuriser des systèmes informatiques, je me consacre maintenant à la formation et aux études. Je suis présentement candidat au séminaire, en discernement pour le sacerdoce catholique.
+    </p>
+    
+    <p>
+      Je partage ici des réflexions philosophiques sur l'expérience humaine et la nature de la réalité.
+    </p>
+  </article>
+</section>
+<% if (reflexions && reflexions.length > 0) { %>
+<section>
+  <h2>Réflexions récentes</h2>
+  <div>
+    <table class="f6">
+      <tbody>
+        <% reflexions.slice(0, 5).forEach(reflexion => { %>
+          <tr class="lh-copy">
+            <td class="pv2 v-top">
+              <a class="link" href="<%= reflexion.link %>"><%= reflexion.title %></a>
+              <% if (reflexion.date) { %>
+                <time class="db mt1 f7 black-60"><%= reflexion.date %></time>
+              <% } %>
+              <% if (reflexion.description) { %>
+                <p class="mt1 f7 black-70"><%= reflexion.description %></p>
+              <% } %>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+  <p class="mt3">
+    <a class="link" href="/reflexions">Voir toutes les réflexions →</a>
+  </p>
+</section>
+<% } %>
+<%- include('../includes/page-bottom.ejs') %>

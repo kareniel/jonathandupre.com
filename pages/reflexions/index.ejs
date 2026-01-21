@@ -1,0 +1,45 @@
+<%- include('../../includes/page-top.ejs', { 
+  pageTitle: 'Réflexions'
+}) %>
+<section>
+  <article class="lh-copy">
+    <p>
+      Je ne cherche pas à démontrer la vérité d'un message religieux, mais à examiner les objections rationnelles qui conduisent à l'ignorer. En exigeant des preuves parfaites avant de croire, on met souvent de côté les questions importantes. On se retrouve ensuite surpris par les tragédies inévitables qui secouent les fondations de notre existence. J'aimerais aider ceux qui veulent être prévoyant à trouver des pistes de réponse tout en respectant leur rigueur intellectuelle.
+    </p>
+    <p>
+      Voici quelques-unes de mes réflexions écrites à ce sujet :
+    </p>
+  </article>
+  <div>
+    <table class="f6">
+      <tbody>
+        <% reflexions.forEach(reflexion => { %>
+          <tr class="lh-copy">
+            <td class="pv2 v-top">
+              <a class="link" href="<%= reflexion.link %>"><%= reflexion.title %></a>
+              <% if (reflexion.date) { %>
+                <time class="db mt1 f7 black-60"><%= reflexion.date %></time>
+              <% } %>
+              <% if (reflexion.description) { %>
+                <p class="mt1 f7 black-70"><%= reflexion.description %></p>
+              <% } %>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Archive</h2>
+  <article class="lh-copy">
+    <p>
+      Je garde ici quelques publications qui datent de ma carrière comme consultant en cybersécurité.
+    </p>
+    
+    <p>
+      [articles…]
+    </p>
+  </article>
+</section>
+<%- include('../../includes/page-bottom.ejs') %>

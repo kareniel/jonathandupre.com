@@ -48,11 +48,60 @@ function findEjsFiles(dir, baseDir = dir) {
   return files;
 }
 
+// Collect all reflexions data
+function collectReflexions() {
+  const contentPath = path.join(contentDir, 'reflexions');
+  
+  if (!fs.existsSync(contentPath)) {
+    return [];
+  }
+
+  const markdownFiles = fs.readdirSync(contentPath)
+    .filter(file => file.endsWith('.md'));
+
+  const reflexions = markdownFiles.map((mdFile) => {
+    const mdPath = path.join(contentPath, mdFile);
+    const mdContent = fs.readFileSync(mdPath, 'utf8');
+    const { data: frontmatter } = matter(mdContent);
+    
+    // Generate slug from title
+    const slug = generateSlug(frontmatter.title);
+    
+    // Format date as YYYY-MM-DD if it exists
+    let formattedDate = frontmatter.date;
+    if (formattedDate) {
+      const date = formattedDate instanceof Date ? formattedDate : new Date(formattedDate);
+      if (!isNaN(date.getTime())) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        formattedDate = `${year}-${month}-${day}`;
+      }
+    }
+    
+    // Return all metadata plus the link
+    return {
+      ...frontmatter,
+      date: formattedDate,
+      link: `/reflexions/${slug}`,
+      slug,
+    };
+  });
+
+  // Sort by date (newest first) if date exists
+  return reflexions.sort((a, b) => {
+    if (a.date && b.date) {
+      return new Date(b.date) - new Date(a.date);
+    }
+    return 0;
+  });
+}
+
 // Process regular (non-underscore) templates
-function processRegularTemplates(templates) {
+function processRegularTemplates(templates, reflexions) {
   templates.forEach(({ fullPath, relativePath, name }) => {
     const template = fs.readFileSync(fullPath, 'utf8');
-    const html = ejs.render(template, {}, { filename: fullPath });
+    const html = ejs.render(template, { reflexions }, { filename: fullPath });
 
     // Output filename (e.g., index.ejs -> index.html)
     const outputFile = name.replace('.ejs', '.html');
@@ -70,7 +119,7 @@ function processRegularTemplates(templates) {
 }
 
 // Process underscore templates with markdown content
-function processUnderscoreTemplates(templates) {
+function processUnderscoreTemplates(templates, reflexions) {
   templates.forEach(({ fullPath, relativePath, dir }) => {
     // For now, only support content/reflexions
     if (dir === 'reflexions') {
@@ -98,16 +147,29 @@ function processUnderscoreTemplates(templates) {
         // Generate slug from title
         const slug = generateSlug(frontmatter.title);
         
+        // Format date as YYYY-MM-DD if it exists
+        let formattedDate = frontmatter.date;
+        if (formattedDate) {
+          const date = formattedDate instanceof Date ? formattedDate : new Date(formattedDate);
+          if (!isNaN(date.getTime())) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            formattedDate = `${year}-${month}-${day}`;
+          }
+        }
+        
         // Convert markdown to HTML
         const htmlContent = marked(content);
         
         // Render the template with the data
         const html = ejs.render(template, {
-          title: frontmatter.title,
-          date: frontmatter.date,
-          description: frontmatter.description,
+          ...frontmatter,
+          date: formattedDate,
           content: htmlContent,
           slug,
+          link: `/reflexions/${slug}`,
+          reflexions,
         }, { filename: fullPath });
 
         // Output to reflexions/{slug}.html
@@ -127,11 +189,12 @@ function processUnderscoreTemplates(templates) {
 }
 
 // Main build process
+const reflexions = collectReflexions();
 const allTemplates = findEjsFiles(pagesDir);
 const regularTemplates = allTemplates.filter(t => !t.isUnderscore);
 const underscoreTemplates = allTemplates.filter(t => t.isUnderscore);
 
-processRegularTemplates(regularTemplates);
-processUnderscoreTemplates(underscoreTemplates);
+processRegularTemplates(regularTemplates, reflexions);
+processUnderscoreTemplates(underscoreTemplates, reflexions);
 
 console.log('Build complete!');

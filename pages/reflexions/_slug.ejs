@@ -1,0 +1,21 @@
+<%- include('../../includes/page-top.ejs', { 
+  pageTitle: typeof title !== 'undefined' ? title : ''
+}) %>
+<section class="mb5">
+  <article class="lh-copy">
+    <% if (typeof date !== 'undefined' && date) { %>
+      <span class="db f7 black-60 mb2"><%= date %></span>
+    <% } %>
+    <%- typeof content !== 'undefined' ? content : '' %>
+  </article>
+</section>
+<section class="mb5 mt-auto">
+  <article class="lh-copy">
+    <p class="mt0 f7 black-70">
+      J'écris pour des hommes qui veulent une vie cohérente, sobre et exigeante. 
+      Vous recevrez un courriel de temps en temps. Pas de spam. Désinscription facile.
+    </p>
+    <%- include('../../includes/subscribe.ejs') %>
+  </article>
+</section>
+<%- include('../../includes/page-bottom.ejs') %>

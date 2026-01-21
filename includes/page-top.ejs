@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%
+    let title = 'Jonathan Dupré';
+    if (typeof pageTitle !== 'undefined' && pageTitle) {
+      title = `${pageTitle} - Jonathan Dupré`;
+    }
+  %>
+  <%- include('head.ejs', { title }) %>
+  <body class="sans-serif flex flex-column">
+    <%- include('nav.ejs') %>
+    <main class="flex justify-center flex-auto pv3 ph2">
+      <div class="container flex-auto">
+        <% if (typeof pageTitle !== 'undefined' && pageTitle) { %>
+          <%- include('header.ejs', { pageTitle }) %>
+        <% } %>
