@@ -103,6 +103,12 @@ process.on('SIGINT', shutdown);
 process.on('SIGTERM', shutdown);
 
 function getMimeType(filePath) {
+  // Handle atom feed file (no extension)
+  const fileName = path.basename(filePath);
+  if (fileName === 'atom') {
+    return 'application/atom+xml; charset=utf-8';
+  }
+  
   const ext = path.extname(filePath).toLowerCase();
   return mimeTypes[ext] || 'application/octet-stream';
 }

@@ -5,6 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "start": "node bin/serve.js",
     "build": "node bin/build.js",
     "watch": "node bin/watch.js",
     "serve": "node bin/serve.js",
