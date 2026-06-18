@@ -1,0 +1,80 @@
+<%
+  // SEO defaults
+  const siteUrl = 'https://jonathandupre.com';
+  const siteName = 'Jonathan Dupré';
+  const defaultDescription = 'Réflexions philosophiques sur l\'expérience humaine et la nature de la réalité';
+  const defaultTitle = 'Jonathan Dupré';
+  
+  // Build title from pageTitle parameter if provided
+  // Check parameter safely to avoid variable shadowing
+  let incomingPageTitle;
+  try { incomingPageTitle = pageTitle; } catch(e) { incomingPageTitle = null; }
+  const titleParam = typeof title !== 'undefined' ? title : null;
+  const pageTitle = incomingPageTitle ? `${incomingPageTitle} - ${siteName}` : (titleParam || defaultTitle);
+  
+  // Get description (from description param or use default)
+  const pageDescription = typeof description !== 'undefined' && description ? description : defaultDescription;
+  
+  // Build URL from link if provided, otherwise use siteUrl
+  const pageUrl = (typeof link !== 'undefined' && link) ? `${siteUrl}${link}` : 
+                   (typeof url !== 'undefined' && url) ? url : siteUrl;
+  
+  // Determine page type (article if link is provided, otherwise website)
+  const pageType = (typeof link !== 'undefined' && link) ? 'article' : 
+                   (typeof type !== 'undefined' ? type : 'website');
+  
+  // Handle image
+  const imageParam = typeof image !== 'undefined' ? image : (typeof ogImage !== 'undefined' ? ogImage : null);
+  const pageImage = imageParam ? (imageParam.startsWith('http') ? imageParam : `${siteUrl}${imageParam}`) : null;
+%>
+<head>
+    <title><%- pageTitle %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="<%- pageTitle %>">
+    <meta name="description" content="<%- pageDescription %>">
+    <meta name="author" content="Jonathan Dupré">
+    <meta name="language" content="fr">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<%- pageUrl %>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="<%- pageType %>">
+    <meta property="og:url" content="<%- pageUrl %>">
+    <meta property="og:title" content="<%- pageTitle %>">
+    <meta property="og:description" content="<%- pageDescription %>">
+    <meta property="og:site_name" content="<%- siteName %>">
+    <meta property="og:locale" content="fr_FR">
+    <% if (pageImage) { %>
+    <meta property="og:image" content="<%- pageImage %>">
+    <% } %>
+    <meta property="og:author" content="Jonathan Dupré">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%- pageTitle %>">
+    <meta name="twitter:description" content="<%- pageDescription %>">
+    <% if (pageImage) { %>
+    <meta name="twitter:image" content="<%- pageImage %>">
+    <% } %>
+    
+    <!-- Article-specific meta tags (for blog posts) -->
+    <% if (pageType === 'article' && typeof date !== 'undefined' && date) { %>
+    <meta property="article:published_time" content="<%= new Date(date).toISOString() %>">
+    <meta property="article:author" content="Jonathan Dupré">
+    <% } %>
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/atom+xml" title="<%= siteName %>" href="<%= siteUrl %>/atom">
+</head>

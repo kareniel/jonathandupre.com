@@ -1,0 +1,57 @@
+<%- include('../includes/page-top.ejs', { 
+  pageTitle: 'Salut.'
+}) %>
+<!-- <section class="mb5">
+  <article class="lh-copy">
+    <h1 class="f4 f4-ns">Devenir ce qu'on est appelé à être</h1>
+    <p class="mt0 f5">
+      J'écris pour des hommes qui veulent une vie cohérente, sobre et exigeante. 
+      Vous recevrez un courriel de temps en temps. Pas de spam. Désinscription facile.
+    </p>
+    <%- include('../includes/subscribe.ejs') %>
+  </article>
+</section> -->
+<section class="">
+  <article class="lh-copy">
+    <!-- Je m'appelle Jonathan Dupré.  -->
+    
+    <p>
+Après plus de dix ans à concevoir, déployer et sécuriser des systèmes informatiques, 
+je quitte l'industrie du logiciel pour entrer en formation sacerdotale. Je suis séminariste 
+pour le diocèse de Saint-Jérôme-Mont-Laurier et j'étudie la philosophie au 
+Grand Séminaire de l'Archidiocèse de Montréal.
+    </p>
+    
+    <!-- <p>
+      Je publie ici des réflexions sur la philosophie et la foi. Ces textes n'engagent que moi.
+    </p> -->
+  </article>
+</section>
+<% if (reflexions && reflexions.length > 0) { %>
+<!-- <section>
+  <h2>Réflexions récentes</h2>
+  <div>
+    <table class="f6">
+      <tbody>
+        <% reflexions.slice(0, 5).forEach(reflexion => { %>
+          <tr class="lh-copy">
+            <td class="pv2 v-top">
+              <a class="link" href="<%= reflexion.link %>"><%= reflexion.title %></a>
+              <% if (reflexion.date) { %>
+                <time class="db mt1 f7 black-60"><%= reflexion.date %></time>
+              <% } %>
+              <% if (reflexion.description) { %>
+                <p class="mt1 f7 black-70"><%= reflexion.description %></p>
+              <% } %>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+  <p class="mt3">
+    <a class="link" href="/reflexions">Voir toutes les réflexions →</a>
+  </p>
+</section> -->
+<% } %>
+<%- include('../includes/page-bottom.ejs') %>

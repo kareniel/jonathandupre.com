@@ -1,0 +1,40 @@
+<%- include('../../includes/page-top.ejs', { 
+  pageTitle: 'Réflexions'
+}) %>
+<section>
+  <article class="lh-copy">
+    
+    <p>
+      Voici quelques-unes de mes réflexions écrites :
+    </p>
+  </article>
+  <div>
+    <table class="f6">
+      <tbody>
+        <% reflexions.forEach(reflexion => { %>
+          <tr class="lh-copy">
+            <td class="pv2 v-top">
+              <time class="black-60"><%= reflexion.date %></time>
+              <span class="black-60"> — </span>  
+              <a class="link" href="<%= reflexion.link %>"><%= reflexion.title %></a>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- <section>
+  <h2>Archive</h2>
+  <article class="lh-copy">
+    <p>
+      Je garde ici quelques publications qui datent de ma carrière comme 
+      consultant en cybersécurité.
+    </p>
+    
+    <p>
+      [articles…]
+    </p>
+  </article>
+</section> -->
+<%- include('../../includes/page-bottom.ejs') %>

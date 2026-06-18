@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%- include('head.ejs', { 
+    pageTitle: typeof pageTitle !== 'undefined' ? pageTitle : undefined,
+    description: typeof description !== 'undefined' ? description : undefined,
+    link: typeof link !== 'undefined' ? link : undefined,
+    date: typeof date !== 'undefined' ? date : undefined,
+    image: typeof image !== 'undefined' ? image : undefined,
+    ogImage: typeof ogImage !== 'undefined' ? ogImage : undefined
+  }) %>
+  <body class="sans-serif flex flex-column">
+    <%- include('nav.ejs') %>
+    <main class="flex justify-center flex-auto pv3 ph2">
+      <div class="container flex-auto">
+        <% if (typeof pageTitle !== 'undefined' && pageTitle) { %>
+          <%- include('header.ejs', { pageTitle }) %>
+        <% } %>
