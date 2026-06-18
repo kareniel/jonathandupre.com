@@ -365,6 +365,35 @@ function generateAtomFeed(allContent) {
   console.log(`Generated Atom feed -> atom`);
 }
 
+function copyPublicDirectory() {
+  const publicDir = path.join(projectRoot, 'public');
+
+  if (!fs.existsSync(publicDir)) {
+    return;
+  }
+
+  function copyRecursive(src, dest) {
+    const entries = fs.readdirSync(src, { withFileTypes: true });
+
+    for (const entry of entries) {
+      const srcPath = path.join(src, entry.name);
+      const destPath = path.join(dest, entry.name);
+
+      if (entry.isDirectory()) {
+        if (!fs.existsSync(destPath)) {
+          fs.mkdirSync(destPath, { recursive: true });
+        }
+        copyRecursive(srcPath, destPath);
+      } else {
+        fs.copyFileSync(srcPath, destPath);
+        console.log(`Copied ${path.relative(projectRoot, srcPath)} -> ${path.relative(projectRoot, destPath)}`);
+      }
+    }
+  }
+
+  copyRecursive(publicDir, outputDir);
+}
+
 // Main build process
 const allContent = collectAllContent();
 const allTemplates = findEjsFiles(pagesDir);
@@ -374,5 +403,6 @@ const underscoreTemplates = allTemplates.filter(t => t.isUnderscore);
 processRegularTemplates(regularTemplates, allContent);
 processUnderscoreTemplates(underscoreTemplates, allContent);
 generateAtomFeed(allContent);
+copyPublicDirectory();
 
 console.log('Build complete!');
